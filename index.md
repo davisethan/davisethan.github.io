@@ -4,6 +4,10 @@ layout: default
 
 ## Introduction
 
+![Ethan Davis](./media/ethan_davis.jpg)
+
+Software Engineer with 7 years of experience in distributed architectures, cloud services, and ETL data pipelines. Researching probabilistic deep learning applied electroencephalogram (EEG) signal classification intended for neurological rehabilitation at the University of Washington. Seeking PhD opportunities to continue research in probabilistic deep learning and open to further research in computational neuroscience.
+
 ## Parallel Programming
 
 ![Parallel Programming](./media/parallel_programming.png)
