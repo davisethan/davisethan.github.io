@@ -8,7 +8,14 @@ layout: default
 
 This collection features white papers, blog posts, and software implementations that explore the breadth of parallel programming across multiple disciplines. It examines paradigms such as GPU programming, Apache Spark, and Hadoop MapReduce, highlighting how these technologies can accelerate large-scale data processing and computational tasks. The implementations leverage programming languages including C, C++, CUDA, and Java, demonstrating practical techniques and design patterns. Together, these resources provide a solid foundation for understanding, applying, and advancing parallel computing methods in both academic and industrial settings.
 
-| Project | White Paper | Software |
+| Project | White Paper | Software | Technologies
+|---|---|---|---|
+| [Linear Algebra for Image Compression](https://medium.com/parallel-programming/linear-algebra-for-image-compression-2c0eebb8098c) | [Link](https://github.com/davisethan/eigenface/blob/main/Linear_Algebra_for_Image_Compression.pdf) | [Link](https://github.com/davisethan/eigenface/tree/main) | C |
+| [High Performance Matrix Multiplication](https://medium.com/parallel-programming/high-performance-matrix-multiplication-402031cfc162) | [Link](https://github.com/davisethan/gemm/blob/main/High_Performance_Matrix_Multiplication.pdf) | [Link](https://github.com/davisethan/gemm/tree/main) | C++ and CUDA |
+| [Ant Colony Optimization in a Hadoop Cluster](https://medium.com/parallel-programming/ant-colony-optimization-aco-in-a-hadoop-cluster-0b37e89098f3) | | [Link](https://github.com/davisethan/parallel_programming/tree/main/Hadoop/AntColonyOptimization) | Hadoop MapReduce and Java |
+| [Triangle Counting in a Spark Cluster](https://medium.com/parallel-programming/triangle-counting-in-a-spark-cluster-ed10b006093f) | | [Link](https://github.com/davisethan/parallel_programming/tree/main/Spark/TriangleCounting) | Apache Spark and Java |
+| [Hadoop Cluster in AWS EC2](https://medium.com/parallel-programming/hadoop-cluster-in-aws-ec2-ac982d91b1f6) | | | AWS |
+| [Spark Cluster in AWS EC2](https://medium.com/parallel-programming/spark-cluster-in-aws-ec2-8cd3e0992d99) | | | AWS |
 
 # Data Structures and Algorithms
 
