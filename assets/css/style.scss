@@ -11,36 +11,3 @@
 .icon-link:hover {
   color: lightgray;
 }
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-.card {
-  width: 250px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-  background-color: white;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-.card img {
-  width: 100%;
-  height: auto;
-}
-.card-body {
-  padding: 10px;
-}
-.card a {
-  text-decoration: none;
-  color: inherit;
-}
-
