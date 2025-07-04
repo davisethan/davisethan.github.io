@@ -121,3 +121,37 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+<div class="cards-container">
+
+  <div class="card">
+    <a href="/page1.html">
+      <img src="https://via.placeholder.com/250x150" alt="Page 1">
+      <div class="card-body">
+        <h3>Page 1</h3>
+        <p>Short description about page 1 content.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="/page2.html">
+      <img src="https://via.placeholder.com/250x150" alt="Page 2">
+      <div class="card-body">
+        <h3>Page 2</h3>
+        <p>Short description about page 2 content.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href="https://medium.com/your-publication">
+      <img src="https://via.placeholder.com/250x150" alt="Medium">
+      <div class="card-body">
+        <h3>My Medium</h3>
+        <p>Over 130 posts on machine learning topics.</p>
+      </div>
+    </a>
+  </div>
+
+</div>
