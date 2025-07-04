@@ -2,9 +2,15 @@
 layout: default
 ---
 
-# Parallel Programming
+## Introduction
+
+## Parallel Programming
 
 ![Parallel Programming](./media/parallel_programming.png)
+
+<a href="https://medium.com/parallel-programming" target="_blank">
+  <i class="fab fa-github fa-2x"></i>
+</a>
 
 This collection features white papers, blog posts, and software implementations that explore the breadth of parallel programming across multiple disciplines. It examines paradigms such as GPU programming, Apache Spark, and Hadoop MapReduce, highlighting how these technologies can accelerate large-scale data processing and computational tasks. The implementations leverage programming languages including C, C++, CUDA, and Java, demonstrating practical techniques and design patterns. Together, these resources provide a solid foundation for understanding, applying, and advancing parallel computing methods in both academic and industrial settings.
 
@@ -17,15 +23,18 @@ This collection features white papers, blog posts, and software implementations 
 | [Hadoop Cluster in AWS EC2](https://medium.com/parallel-programming/hadoop-cluster-in-aws-ec2-ac982d91b1f6) | | | AWS |
 | [Spark Cluster in AWS EC2](https://medium.com/parallel-programming/spark-cluster-in-aws-ec2-8cd3e0992d99) | | | AWS |
 
-# Data Structures and Algorithms
+## Data Structures and Algorithms
 
 ![Data Structures and Algorithms](./media/dsa.png)
+
+<a href="https://medium.com/data-structures-and-algorithms-dsa" target="_blank">
+  <i class="fab fa-github fa-2x"></i>
+</a>
 
 This resource offers an in-depth introduction to patterns commonly encountered in data structures and algorithms. It organizes these concepts into 24 comprehensive categories, covering over 120 carefully selected problems along with detailed solutions. Each solution is accompanied by clear explanations, unit tests to verify correctness, and thorough complexity analyses to help you understand performance tradeoffs. This structured approach aims to build strong foundational problem-solving skills and deepen you mastery of algorithmic thinking.
 
 | Category
 |---
-| [Introduction](https://medium.com/data-structures-and-algorithms-dsa/introduction-80a626d44b0d)
 | [Sliding Windows](https://medium.com/data-structures-and-algorithms-dsa/sliding-windows-23727d654d8a)
 | [Two Heaps](https://medium.com/data-structures-and-algorithms-dsa/two-heaps-1cafc6d0ef39)
 | [K-way Merge](https://medium.com/data-structures-and-algorithms-dsa/k-way-merge-10fcb84661f5)
@@ -51,4 +60,14 @@ This resource offers an in-depth introduction to patterns commonly encountered i
 | [Merge Intervals](https://medium.com/data-structures-and-algorithms-dsa/merge-intervals-32d3bf785e6b)
 | [Linked Lists](https://medium.com/data-structures-and-algorithms-dsa/linked-lists-0ef5dc363fde)
 
-# System Design
+## System Design
+
+![System Design](./media/system_design.png)
+
+I gained experience designing cloud services such as blog storage, distributed caches, and distributed messaging queues, understanding their architectural principles and tradeoffs. I also studied how to leverage these services to build large-scale applications like YouTube, Google Maps, and Uber, exploring their scalability, reliability, and performance requirements. Additionally, I examined the design of real-world distributed systems including Google File System (GFS), Google BigTable, and critical consensus algorithms like Paxos and Raft, deepening my understanding of fault tolerance, consistency, and distributed coordination in modern cloud infrastructures.
+
+| Certificates |
+|---
+| [Grokking Modern System Design Interview for Engineers & Managers](https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA)
+| [System Design Deep Dive: Real-World Distributed Systems](https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp)
+| [Grokking the System Design Interview](https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq)
