@@ -9,7 +9,7 @@ layout: default
 ![Parallel Programming](./media/parallel_programming.png)
 
 <a href="https://medium.com/parallel-programming" target="_blank">
-  <i class="fab fa-github fa-2x"></i>
+  <i class="fab fa-medium fa-2x"></i>
 </a>
 
 This collection features white papers, blog posts, and software implementations that explore the breadth of parallel programming across multiple disciplines. It examines paradigms such as GPU programming, Apache Spark, and Hadoop MapReduce, highlighting how these technologies can accelerate large-scale data processing and computational tasks. The implementations leverage programming languages including C, C++, CUDA, and Java, demonstrating practical techniques and design patterns. Together, these resources provide a solid foundation for understanding, applying, and advancing parallel computing methods in both academic and industrial settings.
@@ -28,7 +28,7 @@ This collection features white papers, blog posts, and software implementations 
 ![Data Structures and Algorithms](./media/dsa.png)
 
 <a href="https://medium.com/data-structures-and-algorithms-dsa" target="_blank">
-  <i class="fab fa-github fa-2x"></i>
+  <i class="fab fa-medium fa-2x"></i>
 </a>
 
 This resource offers an in-depth introduction to patterns commonly encountered in data structures and algorithms. It organizes these concepts into 24 comprehensive categories, covering over 120 carefully selected problems along with detailed solutions. Each solution is accompanied by clear explanations, unit tests to verify correctness, and thorough complexity analyses to help you understand performance tradeoffs. This structured approach aims to build strong foundational problem-solving skills and deepen you mastery of algorithmic thinking.
