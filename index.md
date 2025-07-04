@@ -1,14 +1,15 @@
 ---
 layout: default
+title: Ethan Davis
 ---
 
-## Introduction
+# Introduction
 
 ![Ethan Davis](./media/ethan_davis.jpg)
 
-Software Engineer with 7 years of experience in distributed architectures, cloud services, and ETL data pipelines. Researching probabilistic deep learning applied electroencephalogram (EEG) signal classification intended for neurological rehabilitation at the University of Washington. Seeking PhD opportunities to continue research in probabilistic deep learning and open to further research in computational neuroscience.
+Software Engineer with 7 years of experience designing and implementing distributed architectures, scalable cloud services, and robust ETL data pipelines. Currently researching probabilistic deep learning applied to electroencephalogram (EEG) signal classification, intended for neurological rehabilitation, at the University of Washington. Seeking PhD opportunities to further pursue research in probabilistic deep learning and open to continuing research in computational neuroscience.
 
-## Parallel Programming
+# Parallel Programming
 
 ![Parallel Programming](./media/parallel_programming.png)
 
@@ -27,7 +28,7 @@ This collection features white papers, blog posts, and software implementations 
 | [Hadoop Cluster in AWS EC2](https://medium.com/parallel-programming/hadoop-cluster-in-aws-ec2-ac982d91b1f6) | | | AWS |
 | [Spark Cluster in AWS EC2](https://medium.com/parallel-programming/spark-cluster-in-aws-ec2-8cd3e0992d99) | | | AWS |
 
-## Data Structures and Algorithms
+# Data Structures and Algorithms
 
 ![Data Structures and Algorithms](./media/dsa.png)
 
@@ -64,7 +65,7 @@ This resource offers an in-depth introduction to patterns commonly encountered i
 | [Merge Intervals](https://medium.com/data-structures-and-algorithms-dsa/merge-intervals-32d3bf785e6b)
 | [Linked Lists](https://medium.com/data-structures-and-algorithms-dsa/linked-lists-0ef5dc363fde)
 
-## System Design
+# System Design
 
 ![System Design](./media/system_design.png)
 
