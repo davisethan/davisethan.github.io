@@ -2,3 +2,13 @@
 ---
 
 @import 'jekyll-theme-cayman';
+
+.icon-link {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.icon-link:hover {
+  color: lightgray;
+}
+
