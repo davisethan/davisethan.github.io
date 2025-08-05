@@ -7,7 +7,7 @@ title: Ethan Davis
 
 ![Ethan Davis](./media/ethan_davis.jpg)
 
-Software Engineer with 7 years of experience designing and implementing distributed architectures, scalable cloud services, and robust ETL data pipelines. Currently researching probabilistic deep learning applied to electroencephalogram (EEG) signal classification, intended for neurological rehabilitation, at the University of Washington. Seeking PhD opportunities to further pursue research in probabilistic deep learning and open to continuing research in computational neuroscience.
+I am pursuing a PhD in scalable probabilistic machine learning systems, focusing on leveraging high performance computing to advance trustworthy AI. Currently, I perform research at the University of Washington in probabilistic machine learning to improve the reliability of ML systems in safety critical applications. I have 7 years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
 # Parallel Programming
 
