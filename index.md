@@ -7,7 +7,7 @@ title: Ethan Davis
 
 ![Ethan Davis](./media/ethan_davis.jpg)
 
-I am pursuing a PhD in building scalable, reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
+I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
 # Parallel Programming
 
@@ -23,6 +23,18 @@ This collection features white papers, blog posts, and software implementations 
 | [Triangle Counting in a Spark Cluster](https://medium.com/parallel-programming/triangle-counting-in-a-spark-cluster-ed10b006093f) | | [Link](https://github.com/davisethan/parallel_programming/tree/main/Spark/TriangleCounting) | Apache Spark and Java |
 | [Hadoop Cluster in AWS EC2](https://medium.com/parallel-programming/hadoop-cluster-in-aws-ec2-ac982d91b1f6) | | | AWS |
 | [Spark Cluster in AWS EC2](https://medium.com/parallel-programming/spark-cluster-in-aws-ec2-8cd3e0992d99) | | | AWS |
+
+# System Design
+
+![System Design](./media/system_design.png)
+
+I gained experience designing cloud services such as blog storage, distributed caches, and distributed messaging queues, understanding their architectural principles and tradeoffs. I also studied how to leverage these services to build large-scale applications like YouTube, Google Maps, and Uber, exploring their scalability, reliability, and performance requirements. Additionally, I examined the design of real-world distributed systems including Google File System (GFS), Google BigTable, and critical consensus algorithms like Paxos and Raft, deepening my understanding of fault tolerance, consistency, and distributed coordination in modern cloud infrastructures.
+
+| Certificates |
+|---
+| [Grokking Modern System Design Interview for Engineers & Managers](https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA)
+| [System Design Deep Dive: Real-World Distributed Systems](https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp)
+| [Grokking the System Design Interview](https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq)
 
 # Data Structures and Algorithms
 
@@ -56,15 +68,3 @@ This resource offers an in-depth introduction to patterns commonly encountered i
 | [Fast and Slow Pointers](https://medium.com/data-structures-and-algorithms-dsa/fast-and-slow-pointers-7efd27bd375f)
 | [Merge Intervals](https://medium.com/data-structures-and-algorithms-dsa/merge-intervals-32d3bf785e6b)
 | [Linked Lists](https://medium.com/data-structures-and-algorithms-dsa/linked-lists-0ef5dc363fde)
-
-# System Design
-
-![System Design](./media/system_design.png)
-
-I gained experience designing cloud services such as blog storage, distributed caches, and distributed messaging queues, understanding their architectural principles and tradeoffs. I also studied how to leverage these services to build large-scale applications like YouTube, Google Maps, and Uber, exploring their scalability, reliability, and performance requirements. Additionally, I examined the design of real-world distributed systems including Google File System (GFS), Google BigTable, and critical consensus algorithms like Paxos and Raft, deepening my understanding of fault tolerance, consistency, and distributed coordination in modern cloud infrastructures.
-
-| Certificates |
-|---
-| [Grokking Modern System Design Interview for Engineers & Managers](https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA)
-| [System Design Deep Dive: Real-World Distributed Systems](https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp)
-| [Grokking the System Design Interview](https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq)
