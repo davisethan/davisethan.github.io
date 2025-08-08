@@ -7,7 +7,7 @@ title: Ethan Davis
 
 ![Ethan Davis](./media/ethan_davis.jpg)
 
-I am pursuing a PhD in scalable probabilistic machine learning systems, focusing on leveraging high performance computing to advance trustworthy AI. Currently, I perform research at the University of Washington in probabilistic machine learning to improve the reliability of ML systems in safety critical applications. I have 7 years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
+I am pursuing a PhD in building scalable, reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
 # Parallel Programming
 
