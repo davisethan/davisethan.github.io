@@ -17,8 +17,8 @@ This collection features white papers, blog posts, and software implementations 
 
 | Project | White Paper | Software | Technologies
 |---|---|---|---|
+| [High Performance Matrix Multiplication](https://medium.com/parallel-programming/high-performance-matrix-multiplication-402031cfc162) | [Link](https://arxiv.org/abs/2509.04594) | [Link](https://github.com/davisethan/gemm/tree/main) | C++ and CUDA |
 | [Linear Algebra for Image Compression](https://medium.com/parallel-programming/linear-algebra-for-image-compression-2c0eebb8098c) | [Link](https://github.com/davisethan/eigenface/blob/main/Linear_Algebra_for_Image_Compression.pdf) | [Link](https://github.com/davisethan/eigenface/tree/main) | C |
-| [High Performance Matrix Multiplication](https://medium.com/parallel-programming/high-performance-matrix-multiplication-402031cfc162) | [Link](https://github.com/davisethan/gemm/blob/main/High_Performance_Matrix_Multiplication.pdf) | [Link](https://github.com/davisethan/gemm/tree/main) | C++ and CUDA |
 | [Ant Colony Optimization in a Hadoop Cluster](https://medium.com/parallel-programming/ant-colony-optimization-aco-in-a-hadoop-cluster-0b37e89098f3) | | [Link](https://github.com/davisethan/parallel_programming/tree/main/Hadoop/AntColonyOptimization) | Hadoop MapReduce and Java |
 | [Triangle Counting in a Spark Cluster](https://medium.com/parallel-programming/triangle-counting-in-a-spark-cluster-ed10b006093f) | | [Link](https://github.com/davisethan/parallel_programming/tree/main/Spark/TriangleCounting) | Apache Spark and Java |
 | [Hadoop Cluster in AWS EC2](https://medium.com/parallel-programming/hadoop-cluster-in-aws-ec2-ac982d91b1f6) | | | AWS |
