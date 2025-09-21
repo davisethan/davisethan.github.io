@@ -32,7 +32,7 @@ At the PUMPS+AI ACM Europe Summer School, I gained hands-on experience with GPU 
 
 | Certificates | Details |
 |---|---|
-| [PUMPS+AI ACM Europe Summer School (BSC/UPC)](/assets/certs/Statement%20of%20Accomplishment_PUMPS+AI25_Ethan%20Davis.pdf) | Certificate of accomplishment in CUDA workshops
+| [PUMPS+AI ACM Europe Summer School (BSC/UPC)](/assets/certs/Statement%20of%20Accomplishment_PUMPS+AI25_Ethan%20Davis.pdf) | Statement of accomplishment in CUDA workshops
 | [Grokking Modern System Design Interview for Engineers & Managers](https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA)
 | [System Design Deep Dive: Real-World Distributed Systems](https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp)
 | [Grokking the System Design Interview](https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq)
