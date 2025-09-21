@@ -28,10 +28,11 @@ This collection features white papers, blog posts, and software implementations 
 
 ![System Design](./media/system_design.png)
 
-I gained experience designing cloud services such as blog storage, distributed caches, and distributed messaging queues, understanding their architectural principles and tradeoffs. I also studied how to leverage these services to build large-scale applications like YouTube, Google Maps, and Uber, exploring their scalability, reliability, and performance requirements. Additionally, I examined the design of real-world distributed systems including Google File System (GFS), Google BigTable, and critical consensus algorithms like Paxos and Raft, deepening my understanding of fault tolerance, consistency, and distributed coordination in modern cloud infrastructures.
+At the PUMPS+AI ACM Europe Summer School, I gained hands-on experience with GPU optimization, hyper-tiled matrix multiplication, parallel programming models, and multi-GPU libraries, as well as emerging AI workloads such as LLM kernels. This training deepened my understanding of performance tuning, memory hierarchies, and scalability in high-performance computing. Complementing this, I completed system design courses that analyzed cloud services such as blob storage, distributed caches, and messaging queues, along with large-scale applications like YouTube, Google Maps, and Uber. These courses provided architectural context, while PUMPS+AI offered practical exposure to fault tolerance, consistency, and coordination in real-world distributed and accelerated systems.
 
-| Certificates |
-|---
+| Certificates | Details |
+|---|---|
+| [PUMPS+AI ACM Europe Summer School (BSC/UPC)](/assets/certs/Statement%20of%20Accomplishment_PUMPS+AI25_Ethan%20Davis.pdf) | Certificate of accomplishment in CUDA workshops
 | [Grokking Modern System Design Interview for Engineers & Managers](https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA)
 | [System Design Deep Dive: Real-World Distributed Systems](https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp)
 | [Grokking the System Design Interview](https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq)
