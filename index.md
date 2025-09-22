@@ -9,6 +9,19 @@ title: Ethan Davis
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
+# Research in Progress
+
+![Research in Progress](./media/research.png)
+
+This section shares ongoing components of my thesis. My primary research goal is to determine when Bayesian learning should be used for real-time motor imagery electroencephalography (MI-EEG) brain–computer interface (BCI) control. To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested. The projects below serve both as background knowledge for my thesis and as public references for the broader research community.
+
+| Project | Timeline | Purpose | Description |
+|---|---|---|---|
+| Thesis Poster | July 2025 | Research presentation | [Link](/assets/docs/BDL_Poster.pdf)
+| Mathematics Appendix | Autumn 2025 | Thesis companion | Topics: probability, graphical models, information theory, latent variables, optimization, inference algorithms, etc.
+| Machine Learning Appendix | Winter 2026 | Thesis companion | Topics: predictive models, Bayesian neural networks, Gaussian processes, generative models, normalizing flows, discovery methods, etc.
+| Brain-Computer Interfaces Appendix | Spring 2026 | Thesis companion | Topics: signal processing, classical Euclidean models, Riemannian geometry models, multimodal brain-computer interfaces, etc.
+
 # Parallel Programming
 
 ![Parallel Programming](./media/parallel_programming.png)
@@ -32,7 +45,7 @@ At the PUMPS+AI ACM Europe Summer School, I gained hands-on experience with GPU 
 
 | Certificates | Details |
 |---|---|
-| [PUMPS+AI ACM Europe Summer School (BSC/UPC)](/assets/certs/Statement%20of%20Accomplishment_PUMPS+AI25_Ethan%20Davis.pdf) | Statement of accomplishment in CUDA workshops
+| [PUMPS+AI ACM Europe Summer School (BSC/UPC)](/assets/docs/Statement%20of%20Accomplishment_PUMPS+AI25_Ethan%20Davis.pdf) | Statement of accomplishment in CUDA workshops
 | [Grokking Modern System Design Interview for Engineers & Managers](https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA)
 | [System Design Deep Dive: Real-World Distributed Systems](https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp)
 | [Grokking the System Design Interview](https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq)
