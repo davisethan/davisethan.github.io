@@ -9,18 +9,22 @@ title: Ethan Davis
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
-# Research in Progress
+# Under Construction
 
-![Research in Progress](./media/research.png)
+![Under Construction](./media/research.png)
 
-This section shares ongoing components of my thesis. My primary research goal is to determine when Bayesian learning should be used for real-time motor imagery electroencephalography (MI-EEG) brain–computer interface (BCI) control. To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested. The projects below serve both as background knowledge for my thesis and as public references for the broader research community.
+Convert Medium articles (below) to the literature.
 
-| Project | Timeline | Purpose | Description |
-|---|---|---|---|
-| Thesis Poster | July 2025 | Research presentation | [Link](/assets/docs/BDL_Poster.pdf)
-| Mathematics Appendix | Autumn 2025 | Thesis companion | Topics: probability, graphical models, information theory, latent variables, optimization, inference algorithms, etc.
-| Machine Learning Appendix | Winter 2026 | Thesis companion | Topics: predictive models, Bayesian neural networks, Gaussian processes, generative models, normalizing flows, discovery methods, etc.
-| Brain-Computer Interfaces Appendix | Spring 2026 | Thesis companion | Topics: signal processing, classical Euclidean models, Riemannian geometry models, multimodal brain-computer interfaces, etc.
+* *Ant Colony Optimization for Traveling Salesman Problem*. Use Sobol sampling to explore the ant colony optimization (ACO) parameter space. Take top performing parameter sets and exploit ACO for traveling salesman problem (TSP). Determine how ACO comes to optimal solution (7545) of TSPLIB berlin52.
+
+<!-- This section shares ongoing components of my thesis. My primary research goal is to determine when Bayesian learning should be used for real-time motor imagery electroencephalography (MI-EEG) brain–computer interfaces (BCIs). To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested. The projects below serve both as background knowledge for my thesis and as public references for the broader research community.
+
+| Project | Timeline | Description |
+|---|---|---|
+| Thesis Poster | July 2025 | [Link](/assets/docs/BDL_Poster.pdf)
+| Mathematics Appendix | Autumn 2025 | Probability, graphical models, information theory, latent variables, optimization, inference algorithms, etc.
+| Machine Learning Appendix | Winter 2026 | Predictive models, Bayesian neural networks, Gaussian processes, generative models, normalizing flows, discovery methods, etc.
+| Brain-Computer Interfaces Appendix | Spring 2026 | Signal processing, classical Euclidean models, Riemannian geometry models, multimodal brain-computer interfaces, etc. -->
 
 # Parallel Programming
 
