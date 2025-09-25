@@ -15,7 +15,9 @@ I am pursuing a PhD in building scalable and reliable machine learning systems t
 
 Convert Medium articles (below) to the literature.
 
-* *Ant Colony Optimization for Traveling Salesman Problem*. Use Sobol sampling to explore the ant colony optimization (ACO) parameter space. Take top performing parameter sets and exploit ACO for traveling salesman problem (TSP). Determine how ACO comes to optimal solution (7545) of TSPLIB berlin52.
+* *Ant Colony Optimization for Traveling Salesman Problem*. Use Sobol sampling to explore the ant colony optimization (ACO) parameter space. Take top performing parameter sets and exploit ACO for traveling salesman problem (TSP). Determine how close ACO comes to optimal solution (7545) of TSPLIB berlin52.
+* *Linear Algebra for Image Compression*. Use the QR method and power method + deflation for SVD, scipy or numpy for SVD, and a standard codec like JPEG or JPEG2000 to perform image compression. Calculate metrics like MSE, PSNR, SSIM, and MS-SSIM to compare these methods of image compression. Report statistics from formal tests of the results.
+* *Triangle Counting*. Compare performance from my triangle counting implementation in Spark vs. GraphX. Use a well-known graph dataset like SNAP. Use metrics like wall clock, peak memory to report formal statistical tests.
 
 <!-- This section shares ongoing components of my thesis. My primary research goal is to determine when Bayesian learning should be used for real-time motor imagery electroencephalography (MI-EEG) brain–computer interfaces (BCIs). To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested. The projects below serve both as background knowledge for my thesis and as public references for the broader research community.
 
