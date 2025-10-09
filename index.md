@@ -15,29 +15,22 @@ At the University of Washington, my research goal is to determine when Bayesian 
 
 # Technical Reports
 
+|Papers|
 |---|
-|<a href="https://doi.org/10.48550/arXiv.2510.05027" target="_blank" rel="noopener noreferrer">
-    Metaheuristic Algorithms for Combinatorial Optimization
-</a>|
-|<a href="https://doi.org/10.48550/arXiv.2509.04594" target="_blank" rel="noopener noreferrer">
-    High Performance Matrix Multiplication
-</a>|
-|<a href="https://doi.org/10.5281/zenodo.17180358" target="_blank" rel="noopener noreferrer">
-    Linear Algebra for Image Compression
-</a>|
-|<a href="https://doi.org/10.5281/zenodo.17297422" target="_blank" rel="noopener noreferrer">
-    Linear Algebra for Image Compression
-</a>|
+|<a href="https://doi.org/10.48550/arXiv.2510.05027" target="_blank" rel="noopener noreferrer">Metaheuristic Algorithms for Combinatorial Optimization</a>|
+|<a href="https://doi.org/10.48550/arXiv.2509.04594" target="_blank" rel="noopener noreferrer">High Performance Matrix Multiplication</a>|
+|<a href="https://doi.org/10.5281/zenodo.17180358" target="_blank" rel="noopener noreferrer">Linear Algebra for Image Compression</a>|
+|<a href="https://doi.org/10.5281/zenodo.17297422" target="_blank" rel="noopener noreferrer">Data Structures and Algorithms</a>|
 
 # Software & Reproducibility
 
-|Name|DOI|
-|---|---|
-|Metaheuristic Algorithms for Combinatorial Optimization|[Link](https://doi.org/10.5281/zenodo.17274214)|
-|High Performance Matrix Multiplication|[Link](https://doi.org/10.5281/zenodo.17299758)|
-|Linear Algebra for Image Compression|[Link](https://doi.org/10.5281/zenodo.17299529)|
-|Data Structures and Algorithms|[Link](https://doi.org/10.5281/zenodo.17289626)|
-|Triangle Counting|[Link](https://doi.org/10.5281/zenodo.17299086)|
+|Software|
+|---|
+|<a href="https://doi.org/10.5281/zenodo.17274214" target="_blank" rel="noopener noreferrer">Metaheuristic Algorithms for Combinatorial Optimization</a>|
+|<a href="https://doi.org/10.5281/zenodo.17299758" target="_blank" rel="noopener noreferrer">High Performance Matrix Multiplication</a>|
+|<a href="https://doi.org/10.5281/zenodo.17299529" target="_blank" rel="noopener noreferrer">Linear Algebra for Image Compression</a>|
+|<a href="https://doi.org/10.5281/zenodo.17289626" target="_blank" rel="noopener noreferrer">Data Structures and Algorithms</a>|
+|<a href="https://doi.org/10.5281/zenodo.17299086" target="_blank" rel="noopener noreferrer">Triangle Counting</a>|
 
 # Teaching & Mentoring
 
@@ -59,12 +52,12 @@ Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) d
 
 # Conference Posters
 
-|Conference|Poster|
-|---|---|
-|PUMPS+AI 2025|[Link](assets/docs/pumps_poster.pdf)|
+|Poster|
+|---|
+|<a href="assets/docs/pumps_poster.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025</a>|
 
 # Certifications
 
-|Certification|Verify|
-|---|---|
-|PUMPS+AI 2025 Statement of Accomplishment in CUDA Workshops|[Link](assets/docs/pumps_certification.pdf)|
+|Certification|
+|---|
+|<a href="assets/docs/pumps_certification.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 Statement of Accomplishment in CUDA Workshops</a>|
