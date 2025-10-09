@@ -13,7 +13,7 @@ I am pursuing a PhD in building scalable and reliable machine learning systems t
 
 # Education
 
-**M.S. Computer Science, University of Washington Bothell, 2024–2026**  
+**M.S. Computer Science, University of Washington, 2024–2026**  
 **B.S. Computer Science, Oregon State University, 2020–2022**  
 **B.S. Mathematics, University of Portland, 2011–2015**
 
