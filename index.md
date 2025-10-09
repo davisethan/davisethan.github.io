@@ -7,6 +7,8 @@ title: Ethan Davis
 
 ![Ethan Davis](assets/images/ethan_davis.jpg)
 
+**Email:** <a href="mailto:davise5@uw.edu">davise5@uw.edu</a>
+
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
 # Research Experience
