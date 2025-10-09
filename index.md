@@ -65,4 +65,4 @@ Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) d
 
 |Certifications|
 |---|
-|<a href="assets/files/pumps_certification.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 Statement of Accomplishment in CUDA Workshops</a>|
+|<a href="assets/files/pumps_certification.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 Statement of Accomplishment in CUDA workshops</a>|
