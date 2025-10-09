@@ -32,6 +32,10 @@ At the University of Washington, my research goal is to determine when Bayesian 
 |Data Structures and Algorithms|[Link](https://doi.org/10.5281/zenodo.17289626)|
 |Triangle Counting|[Link](https://doi.org/10.5281/zenodo.17299086)|
 
+# Teaching & Mentoring
+
+Assisting Prof. Erika Parsons in updating the course _Mathematics for Machine Learning_, including curriculum design, textbook selection, and assignment development and grading.
+
 # Selected Industry Experience
 
 ## _Software Engineer, SeekOut - Bellevue, WA (2022–2024)_
