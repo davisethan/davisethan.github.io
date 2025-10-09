@@ -49,7 +49,7 @@ Assisting Prof. Erika Parsons in updating the course _Mathematics for Machine Le
 **Software Engineer**, SeekOut – Bellevue, WA (2022–2024)  
 Built and optimized data pipelines and distributed systems in C# and Azure, applying object-oriented design, SOLID principles, and automated testing to improve scalability, reliability, and maintainability of large-scale ETL and search infrastructure.
 
-**Software Engineer**, Independent Project – Seattle, WA (2017–2020). 
+**Software Engineer**, Independent Project – Seattle, WA (2017–2020)  
 Designed a fault-tolerant, microservices-based web application using Java, Spring Boot, Node.js, and AWS, implementing distributed systems principles for scalable cloud deployment.
 
 **Software Engineer**, StackBrew – Redmond, WA (2015–2017)  
