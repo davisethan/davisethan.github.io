@@ -32,6 +32,20 @@ At the University of Washington, my research goal is to determine when Bayesian 
 |Data Structures and Algorithms|[Link](https://doi.org/10.5281/zenodo.17289626)|
 |Triangle Counting|[Link](https://doi.org/10.5281/zenodo.17299086)|
 
+# Selected Industry Experience
+
+## _Software Engineer, SeekOut - Bellevue, WA (2022–2024)_
+
+Built and optimized data pipelines and distributed systems in C# and Azure, applying object-oriented design, SOLID principles, and automated testing to improve scalability, reliability, and maintainability of large-scale ETL and search infrastructure.
+
+## _Software Engineer, Independent Project - Seattle, WA (2017–2020)_
+
+Designed a fault-tolerant, microservices-based web application using Java, Spring Boot, Node.js, and AWS, implementing distributed systems principles for scalable cloud deployment.
+
+## _Software Engineer, StackBrew - Redmond, WA (2015–2017)_
+
+Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) deployed on GCP, exploring collaborative editing algorithms (OT and CRDTs) to inform distributed software design.
+
 # Conference Posters
 
 |Conference|Poster|
