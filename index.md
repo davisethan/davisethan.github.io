@@ -11,6 +11,12 @@ title: Ethan Davis
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
+# Education
+
+**M.S. Computer Science, University of Washington Bothell, 2024–2026**  
+**B.S. Computer Science, Oregon State University, 2020–2022**  
+**B.S. Mathematics, University of Portland, 2011–2015**
+
 # Research Experience
 
 At the University of Washington, my research goal is to determine when Bayesian learning benefits real-time motor imagery electroencephalography (MI-EEG) brain–computer interfaces (BCIs). To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested.
