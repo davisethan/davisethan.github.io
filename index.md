@@ -5,91 +5,41 @@ title: Ethan Davis
 
 # Introduction
 
-![Ethan Davis](./media/ethan_davis.jpg)
+![Ethan Davis](assets/images/ethan_davis.jpg)
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
-# Under Construction
+# Research Experience
 
-![Under Construction](./media/research.png)
+At the University of Washington, my research goal is to determine when Bayesian learning benefits real-time motor imagery electroencephalography (MI-EEG) brain–computer interfaces (BCIs). To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested.
 
-## Master thesis
+# Technical Reports
 
-My primary research goal is to determine when Bayesian learning should be used for real-time motor imagery electroencephalography (MI-EEG) brain–computer interfaces (BCIs). To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested.
-
-## Convert Medium articles (below) to the literature
-
-* *Ant Colony Optimization for Traveling Salesman Problem*. Use Sobol sampling to explore the ant colony optimization (ACO) parameter space. Take top performing parameter sets and exploit ACO for traveling salesman problem (TSP). Determine how close ACO comes to optimal solution (7545) of TSPLIB berlin52.
-* *Linear Algebra for Image Compression*. Use the QR method and power method + deflation for SVD, scipy or numpy for SVD, and a standard codec like JPEG or JPEG2000 to perform image compression. Calculate metrics like MSE, PSNR, SSIM, and MS-SSIM to compare these methods of image compression. Report statistics from formal tests of the results.
-* *Triangle Counting*. Compare performance from my triangle counting implementation in Spark vs. GraphX. Use a well-known graph dataset like SNAP. Use metrics like wall clock, peak memory to report formal statistical tests.
-* *Data Structures and Algorithms*. Convert Medium articles and Github code to Zenodo DOIs. There will be two major sections of my CV, and professional website: Research, and Development. This project falls under development.
-
-<!-- This section shares ongoing components of my thesis. My primary research goal is to determine when Bayesian learning should be used for real-time motor imagery electroencephalography (MI-EEG) brain–computer interfaces (BCIs). To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested. The projects below serve both as background knowledge for my thesis and as public references for the broader research community.
-
-| Project | Timeline | Description |
-|---|---|---|
-| Thesis Poster | July 2025 | [Link](/assets/docs/BDL_Poster.pdf)
-| Mathematics Appendix | Autumn 2025 | Probability, graphical models, information theory, latent variables, optimization, inference algorithms, etc.
-| Machine Learning Appendix | Winter 2026 | Predictive models, Bayesian neural networks, Gaussian processes, generative models, normalizing flows, discovery methods, etc.
-| Brain-Computer Interfaces Appendix | Spring 2026 | Signal processing, classical Euclidean models, Riemannian geometry models, multimodal brain-computer interfaces, etc. -->
-
-# Parallel Programming
-
-![Parallel Programming](./media/parallel_programming.png)
-
-This collection features white papers, blog posts, and software implementations that explore the breadth of parallel programming across multiple disciplines. It examines paradigms such as GPU programming, Apache Spark, and Hadoop MapReduce, highlighting how these technologies can accelerate large-scale data processing and computational tasks. The implementations leverage programming languages including C, C++, CUDA, and Java, demonstrating practical techniques and design patterns. Together, these resources provide a solid foundation for understanding, applying, and advancing parallel computing methods in both academic and industrial settings.
-
-| Project | White Paper | Software | Technologies
-|---|---|---|---|
-| [High Performance Matrix Multiplication](https://medium.com/parallel-programming/high-performance-matrix-multiplication-402031cfc162) | [Link](https://arxiv.org/abs/2509.04594) | [Link](https://github.com/davisethan/gemm/tree/main) | C++ and CUDA |
-| [Linear Algebra for Image Compression](https://medium.com/parallel-programming/linear-algebra-for-image-compression-2c0eebb8098c) | [Link](https://github.com/davisethan/eigenface/blob/main/Linear_Algebra_for_Image_Compression.pdf) | [Link](https://github.com/davisethan/eigenface/tree/main) | C |
-| [Ant Colony Optimization in a Hadoop Cluster](https://medium.com/parallel-programming/ant-colony-optimization-aco-in-a-hadoop-cluster-0b37e89098f3) | | [Link](https://github.com/davisethan/parallel_programming/tree/main/Hadoop/AntColonyOptimization) | Hadoop MapReduce and Java |
-| [Triangle Counting in a Spark Cluster](https://medium.com/parallel-programming/triangle-counting-in-a-spark-cluster-ed10b006093f) | | [Link](https://github.com/davisethan/parallel_programming/tree/main/Spark/TriangleCounting) | Apache Spark and Java |
-| [Hadoop Cluster in AWS EC2](https://medium.com/parallel-programming/hadoop-cluster-in-aws-ec2-ac982d91b1f6) | | | AWS |
-| [Spark Cluster in AWS EC2](https://medium.com/parallel-programming/spark-cluster-in-aws-ec2-8cd3e0992d99) | | | AWS |
-
-# System Design
-
-![System Design](./media/system_design.png)
-
-At the PUMPS+AI ACM Europe Summer School, I gained hands-on experience with GPU optimization, hyper-tiled matrix multiplication, parallel programming models, and multi-GPU libraries, as well as emerging AI workloads such as LLM kernels. This training deepened my understanding of performance tuning, memory hierarchies, and scalability in high-performance computing. Complementing this, I completed system design courses that analyzed cloud services such as blob storage, distributed caches, and messaging queues, along with large-scale applications like YouTube, Google Maps, and Uber. These courses provided architectural context, while PUMPS+AI offered practical exposure to fault tolerance, consistency, and coordination in real-world distributed and accelerated systems.
-
-| Certificates | Details |
+|Name|DOI|
 |---|---|
-| [PUMPS+AI ACM Europe Summer School (BSC/UPC)](/assets/docs/Statement%20of%20Accomplishment_PUMPS+AI25_Ethan%20Davis.pdf) | Statement of accomplishment in CUDA workshops
-| [Grokking Modern System Design Interview for Engineers & Managers](https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA)
-| [System Design Deep Dive: Real-World Distributed Systems](https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp)
-| [Grokking the System Design Interview](https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq)
+|Metaheuristic Algorithms for Combinatorial Optimization|https://doi.org/10.48550/arXiv.2510.05027|
+|High Performance Matrix Multiplication|https://doi.org/10.48550/arXiv.2509.04594|
+|Linear Algebra for Image Compression|https://doi.org/10.5281/zenodo.17180358|
+|Data Structures and Algorithms|https://doi.org/10.5281/zenodo.17297422|
 
-# Data Structures and Algorithms
+# Software & Reproducibility
 
-![Data Structures and Algorithms](./media/dsa.png)
+|Name|DOI|
+|---|---|
+|Metaheuristic Algorithms for Combinatorial Optimization|https://doi.org/10.5281/zenodo.17274214|
+|High Performance Matrix Multiplication|https://doi.org/10.5281/zenodo.17299758|
+|Linear Algebra for Image Compression|https://doi.org/10.5281/zenodo.17299529|
+|Data Structures and Algorithms|https://doi.org/10.5281/zenodo.17289626|
+|Triangle Counting|https://doi.org/10.5281/zenodo.17299086|
 
-This resource offers an in-depth introduction to patterns commonly encountered in data structures and algorithms. It organizes these concepts into 24 comprehensive categories, covering over 120 carefully selected problems along with detailed solutions. Each solution is accompanied by clear explanations, unit tests to verify correctness, and thorough complexity analyses to help you understand performance tradeoffs. This structured approach aims to build strong foundational problem-solving skills and deepen you mastery of algorithmic thinking.
+# Conference Posters
 
-| Category
-|---
-| [Sliding Windows](https://medium.com/data-structures-and-algorithms-dsa/sliding-windows-23727d654d8a)
-| [Two Heaps](https://medium.com/data-structures-and-algorithms-dsa/two-heaps-1cafc6d0ef39)
-| [K-way Merge](https://medium.com/data-structures-and-algorithms-dsa/k-way-merge-10fcb84661f5)
-| [Top K Elements](https://medium.com/data-structures-and-algorithms-dsa/top-k-elements-e4e6643eb7d2)
-| [Modified Binary Search](https://medium.com/data-structures-and-algorithms-dsa/modified-binary-search-c5cc1c71a5c5)
-| [Subsets](https://medium.com/data-structures-and-algorithms-dsa/subsets-415a98cbb7bc)
-| [Greedy Techniques](https://medium.com/data-structures-and-algorithms-dsa/greedy-techniques-1191967c51c0)
-| [Backtracking](https://medium.com/data-structures-and-algorithms-dsa/backtracking-eff87a3b5d00)
-| [Dynamic Programming](https://medium.com/data-structures-and-algorithms-dsa/dynamic-programming-4744e5653ca8)
-| [Cyclic Sort](https://medium.com/data-structures-and-algorithms-dsa/cyclic-sort-d8d37284bdc0)
-| [Topological Sort](https://medium.com/data-structures-and-algorithms-dsa/topological-sort-3b6bbaf83397)
-| [Matrices](https://medium.com/data-structures-and-algorithms-dsa/matrices-5f8d54af9416)
-| [Stacks](https://medium.com/data-structures-and-algorithms-dsa/stacks-6f36eaa4191a)
-| [Graphs](https://medium.com/data-structures-and-algorithms-dsa/graphs-a952a51c5861)
-| [Depth First Search](https://medium.com/data-structures-and-algorithms-dsa/depth-first-search-7a46feb6ffdf)
-| [Breadth First Search](https://medium.com/data-structures-and-algorithms-dsa/breadth-first-search-e33939b988e9)
-| [Tries](https://medium.com/data-structures-and-algorithms-dsa/tries-b0e48a6f307b)
-| [Hash Maps](https://medium.com/data-structures-and-algorithms-dsa/hash-maps-ad87a06d14c6)
-| [Counters](https://medium.com/data-structures-and-algorithms-dsa/counters-a2fcd3da83b2)
-| [Union Find](https://medium.com/data-structures-and-algorithms-dsa/union-find-98e2df0877a3)
-| [Two Pointers](https://medium.com/data-structures-and-algorithms-dsa/two-pointers-0f8561d167fd)
-| [Fast and Slow Pointers](https://medium.com/data-structures-and-algorithms-dsa/fast-and-slow-pointers-7efd27bd375f)
-| [Merge Intervals](https://medium.com/data-structures-and-algorithms-dsa/merge-intervals-32d3bf785e6b)
-| [Linked Lists](https://medium.com/data-structures-and-algorithms-dsa/linked-lists-0ef5dc363fde)
+|Conference|Poster|
+|---|---|
+|PUMPS+AI 2025|[Link](assets/docs/pumps_poster.pdf)|
+
+# Certifications
+
+|Certification|Verify|
+|---|---|
+|PUMPS+AI 2025 Statement of Accomplishment in CUDA Workshops|[Link](assets/docs/pumps_certification.pdf)|
