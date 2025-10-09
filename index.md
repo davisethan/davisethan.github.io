@@ -15,12 +15,19 @@ At the University of Washington, my research goal is to determine when Bayesian 
 
 # Technical Reports
 
-|Name|DOI|
-|---|---|
-|Metaheuristic Algorithms for Combinatorial Optimization|[Link](https://doi.org/10.48550/arXiv.2510.05027)|
-|High Performance Matrix Multiplication|[Link](https://doi.org/10.48550/arXiv.2509.04594)|
-|Linear Algebra for Image Compression|[Link](https://doi.org/10.5281/zenodo.17180358)|
-|Data Structures and Algorithms|[Link](https://doi.org/10.5281/zenodo.17297422)|
+|---|
+|<a href="https://doi.org/10.48550/arXiv.2510.05027" target="_blank" rel="noopener noreferrer">
+    Metaheuristic Algorithms for Combinatorial Optimization
+</a>|
+|<a href="https://doi.org/10.48550/arXiv.2509.04594" target="_blank" rel="noopener noreferrer">
+    High Performance Matrix Multiplication
+</a>|
+|<a href="https://doi.org/10.5281/zenodo.17180358" target="_blank" rel="noopener noreferrer">
+    Linear Algebra for Image Compression
+</a>|
+|<a href="https://doi.org/10.5281/zenodo.17297422" target="_blank" rel="noopener noreferrer">
+    Linear Algebra for Image Compression
+</a>|
 
 # Software & Reproducibility
 
