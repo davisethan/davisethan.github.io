@@ -17,20 +17,20 @@ At the University of Washington, my research goal is to determine when Bayesian 
 
 |Name|DOI|
 |---|---|
-|Metaheuristic Algorithms for Combinatorial Optimization|https://doi.org/10.48550/arXiv.2510.05027|
-|High Performance Matrix Multiplication|https://doi.org/10.48550/arXiv.2509.04594|
-|Linear Algebra for Image Compression|https://doi.org/10.5281/zenodo.17180358|
-|Data Structures and Algorithms|https://doi.org/10.5281/zenodo.17297422|
+|Metaheuristic Algorithms for Combinatorial Optimization|[Link](https://doi.org/10.48550/arXiv.2510.05027)|
+|High Performance Matrix Multiplication|[Link](https://doi.org/10.48550/arXiv.2509.04594)|
+|Linear Algebra for Image Compression|[Link](https://doi.org/10.5281/zenodo.17180358)|
+|Data Structures and Algorithms|[Link](https://doi.org/10.5281/zenodo.17297422)|
 
 # Software & Reproducibility
 
 |Name|DOI|
 |---|---|
-|Metaheuristic Algorithms for Combinatorial Optimization|https://doi.org/10.5281/zenodo.17274214|
-|High Performance Matrix Multiplication|https://doi.org/10.5281/zenodo.17299758|
-|Linear Algebra for Image Compression|https://doi.org/10.5281/zenodo.17299529|
-|Data Structures and Algorithms|https://doi.org/10.5281/zenodo.17289626|
-|Triangle Counting|https://doi.org/10.5281/zenodo.17299086|
+|Metaheuristic Algorithms for Combinatorial Optimization|[Link](https://doi.org/10.5281/zenodo.17274214)|
+|High Performance Matrix Multiplication|[Link](https://doi.org/10.5281/zenodo.17299758)|
+|Linear Algebra for Image Compression|[Link](https://doi.org/10.5281/zenodo.17299529)|
+|Data Structures and Algorithms|[Link](https://doi.org/10.5281/zenodo.17289626)|
+|Triangle Counting|[Link](https://doi.org/10.5281/zenodo.17299086)|
 
 # Conference Posters
 
