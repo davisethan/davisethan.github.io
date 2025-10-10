@@ -44,7 +44,7 @@ At the University of Washington, my research goal is to determine when Bayesian 
 
 # Teaching & Mentoring
 
-Assisting Prof. Erika Parsons in updating the course _Mathematics for Machine Learning_, including curriculum design, textbook selection, and assignment development and grading.
+Assisting Prof. Erika Parsons in updating the course _Mathematics for Machine Learning_, including curriculum design, textbook selection, and assignment development and grading. Independently of the course, I curated MI-EEG BCI research directions and reproducibility standards (MOABB, Riemannian pipelines, GNNs) to align lab efforts and accelerate studies.
 
 # Selected Industry Experience
 
