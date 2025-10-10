@@ -11,7 +11,7 @@ title: Ethan Davis
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
-[CV](assets/files/Ethan_Davis_CV_2025.pdf) | [Resume]()
+[Curriculum Vitae](assets/files/Ethan_Davis_CV_2025.pdf) | [Resume]()
 
 # Education
 
@@ -25,7 +25,7 @@ At the University of Washington, my research goal is to determine when Bayesian 
 
 # Technical Reports
 
-|Papers|
+|Paper|
 |---|
 |<a href="https://doi.org/10.48550/arXiv.2510.05027" target="_blank" rel="noopener noreferrer">Metaheuristic Algorithms for Combinatorial Optimization</a>|
 |<a href="https://doi.org/10.48550/arXiv.2509.04594" target="_blank" rel="noopener noreferrer">High Performance Matrix Multiplication</a>|
@@ -59,12 +59,12 @@ Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) d
 
 # Conference Posters
 
-|Posters|
+|Conference|
 |---|
-|<a href="assets/files/pumps_poster.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025</a>|
+|<a href="assets/files/pumps_poster.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 ACM Europe Summer School</a>|
 
 # Certifications
 
-|Certifications|
+|Certification|
 |---|
 |<a href="assets/files/pumps_certification.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 Statement of Accomplishment in CUDA workshops</a>|
