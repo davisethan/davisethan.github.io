@@ -11,7 +11,7 @@ title: Ethan Davis
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
-[Curriculum Vitae](assets/files/Ethan_Davis_CV_2025.pdf) | [Resume]()
+[Curriculum Vitae](assets/files/Ethan_Davis_CV_2025.pdf) | [Resume](assets/files/Ethan_Davis_Resume_2025.pdf)
 
 # Education
 
