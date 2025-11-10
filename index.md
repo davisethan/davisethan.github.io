@@ -54,7 +54,7 @@ With my breadth of models, priors, and inferences, I can formally test multiple 
 7. Pennec, X., Sommer, S., & Fletcher, T. (2019). Riemannian Geometric statistics in medical image analysis. Academic Press.
 8. Murphy, K. P. (2022). Probabilistic Machine Learning: An Introduction. MIT Press.
 
-## Future Directions After MS Thesis
+## Future Directions of MS Thesis
 
 *300 word limit*
 
@@ -64,7 +64,7 @@ Inductive bias discovery such as graph learning can also be used to model MI-EEG
 
 Transfer learning and foundation models are also impactful directions of BCI research [[4]](#future-directions-references). Statistical learning theory (SLT) such as probably approximately correct (PAC) bounds describe the theoretical generalizability of ML models [[9]](#future-directions-references). SLT can be used to describe the effectiveness of different types of BCI classifiers to model MI-EEG data. Additionally, SLT can help BCI researchers that desire MI-EEG classifers that can quickly adapt to cross-session and cross-subject scenarios.
 
-Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are interesting to me. ML is capable of improving our understanding and delivery of healthcare and medicine. In fact it is already doing so. Medical imaging technologies have improved from Riemannian geometrics statistics analysis and algorithms [[10]](#future-directions-references). Graph neural networks are rapidly reducing drug discovery costs [[6, 7]](#future-directions-references). Furthermore, time-series models of biosignals can drive the design of health monitoring wearables, including MI-EEG/BCI devices [[4, 11]](#future-directions-references).
+Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are interesting to me. ML is capable of improving our understanding and delivery of healthcare and medicine. In fact it is already doing so. Medical imaging technologies have improved from Riemannian geometrics statistics analysis and algorithms [[10]](#future-directions-references). Graph neural networks are rapidly reducing drug discovery costs [[6, 7]](#future-directions-references). Furthermore, time-series models of biosignals can drive the design of health monitoring wearables, including MI-EEG/BCI neuroscience devices [[4, 11]](#future-directions-references).
 
 ### Future Directions References
 
