@@ -9,8 +9,6 @@ title: Ethan Davis
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
----
-
 # Table of Contents
 
 * [Research Experience](#research-experience)
@@ -24,9 +22,6 @@ I am pursuing a PhD in building scalable and reliable machine learning systems t
 **B.S. Mathematics, University of Portland, 2011–2015** -->
 
 # Research Experience
-
-* [MS Thesis](#ms-thesis)
-* [Future Directions After MS Thesis](#future-directions-after-ms-thesis)
 
 ## MS Thesis
 
