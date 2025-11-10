@@ -23,6 +23,8 @@ I am pursuing a PhD in building scalable and reliable machine learning systems t
 
 ## MS Thesis
 
+*500 word limit*
+
 The goal of my MS thesis is to evaluate when Bayesian ML benefits motor-imagery electroencephalogram (MI-EEG) brain-computer interface (BCI) classification [[3, 4]](#ms-thesis-references). Motivations for MI-EEG/BCI research include assisting neurorehabilitation therapies and controlling robotic prosthetics [[2]](#ms-thesis-references). I compare analogous frequentist and Bayesian ML models from the three most popular types of MI-EEG classifiers: firstly, linear spatial filters, or secondly, Riemannian geometric spatial filters, plus training models, and thirdly deep learning [[1]](#ms-thesis-references). Metrics used to measure predictive performance come from discrimination, calibration, and sharpness [[3]](#ms-thesis-references).
 
 ![End-to-End Pipeline](assets/images/e2e_pipeline.png)
@@ -50,7 +52,31 @@ With my breadth of models, priors, and inferences, I can formally test multiple 
 7. Pennec, X., Sommer, S., & Fletcher, T. (2019). Riemannian Geometric statistics in medical image analysis. Academic Press.
 8. Murphy, K. P. (2022). Probabilistic Machine Learning: An Introduction. MIT Press.
 
-<!-- At the University of Washington, my research goal is to determine when Bayesian learning benefits real-time motor imagery electroencephalography (MI-EEG) brain–computer interfaces (BCIs). To support this, I am designing a framework that collects a suite of metrics and diagnostics for evaluating machine learning models. These data enable multiple hypotheses to be formally generated and tested. -->
+## Future Directions after MS Thesis
+
+*300 word limit*
+
+Sequence modeling can be used for MI-EEG that is sequential data. The core uncertainty quantification (UQ) of Bayesian ML benefits Markov decision processes (MDPs) under uncertainty, spatiotemporal dynamical systems, and in general reinforcement learning [[1, 2, 3, 4]](#future-directions-references). Furthermore, generative models can be used to train ML that is robust to distribution shift, a problem common to classifiers of noisy MI-EEG data [[2, 4, 5]](#future-directions-references).
+
+Inductive bias discovery such as graph learning can also be used to model MI-EEG [[2, 6]](). These techniques find hidden structures, assumptions in data that can be encoded in ML models for better representation. Examples include geometric deep learning that exploits symmetries of data during training [[7]](#future-directions-references). Another example is topological data analysis (TDA) that may use persistent homology to mine global features of data that are invariant to noise and deformation [[8]](#future-directions-references).
+
+Transfer learning and foundation models are also impactful directions of BCI research [[4]](#future-directions-references). Statistical learning theory (SLT) such as probably approximately correct (PAC) bounds describe the theoretical generalizability of ML models [[9]](#future-directions-references). SLT can be used to describe the effectiveness of different types of BCI classifiers to model MI-EEG data. Additionally, SLT can help BCI researchers that desire MI-EEG classifers that can quickly adapt to cross-session and cross-subject scenarios.
+
+Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are interesting to me. ML is capable of improving our understanding and delivery of healthcare and medicine. In fact it is already doing so. Medical imaging technologies have improved from Riemannian geometrics statistics analysis and algorithms [[10]](#future-directions-references). Graph neural networks are rapidly reducing drug discovery costs [[6, 7]](#future-directions-references). Furthermore, time-series models of biosignals can drive the design of health monitoring wearables, including MI-EEG/BCI devices [[4, 11]](#future-directions-references).
+
+### Future Directions References
+
+1. Bishop, C. M. (2016). Pattern recognition and machine learning. Springer.
+2. Murphy, K. P. (2023). Probabilistic Machine Learning: Advanced Topics. MIT Press.
+3. Brunton, S. L., & Kutz, J. N. (2019). Data-Driven science and engineering: Machine Learning, Dynamical Systems, and Control. Cambridge University Press.
+4. Nam, C. S., Nijholt, A., & Lotte, F. (2018). Brain–Computer Interfaces Handbook: Technological and Theoretical Advances. CRC Press.
+5. Bishop, C. M., & Bishop, H. (2023). Deep learning: Foundations and Concepts. Springer Nature.
+6. Hamilton, W. L. (2022). Graph Representation learning. Springer Nature.
+7. Bronstein, M. M., Bruna, J., Cohen, T., & Veličković, P. (2022). Geometric deep learning: grids, groups, graphs, geodesics, and gauges. arXiv (Cornell University).
+8. Carlsson, G., & Vejdemo-Johansson, M. (2021). Topological Data Analysis with Applications. Cambridge University Press.
+9. Shalev-Shwartz, S., & Ben-David, S. (2014). Understanding machine learning: From Theory to Algorithms. Cambridge University Press.
+10. Pennec, X., Sommer, S., & Fletcher, T. (2019). Riemannian Geometric statistics in medical image analysis. Academic Press.
+11. Prandoni, P., & Vetterli, M. (2008). Signal processing for communications. Collection Savoir suisse.
 
 # Technical Reports
 
