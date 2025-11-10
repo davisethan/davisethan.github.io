@@ -3,23 +3,30 @@ layout: default
 title: Ethan Davis
 ---
 
-# Introduction
-
 ![Ethan Davis](assets/images/ethan_davis.jpg)
 
-**Email:** <a href="mailto:davise5@uw.edu">davise5@uw.edu</a>
+<a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> | <a href="assets/files/Ethan_Davis_Resume_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 
 I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
 
-<a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> | <a href="assets/files/Ethan_Davis_Resume_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+---
 
-# Education
+# Table of Contents
+
+* [Research Experience](#research-experience)
+  * [MS Thesis](#ms-thesis)
+  * [Future Directions After MS Thesis](#future-directions-after-ms-thesis)
+
+<!-- # Education
 
 **M.S. Computer Science, University of Washington, 2024–2026**  
 **B.S. Computer Science, Oregon State University, 2020–2022**  
-**B.S. Mathematics, University of Portland, 2011–2015**
+**B.S. Mathematics, University of Portland, 2011–2015** -->
 
 # Research Experience
+
+* [MS Thesis](#ms-thesis)
+* [Future Directions After MS Thesis](#future-directions-after-ms-thesis)
 
 ## MS Thesis
 
@@ -52,7 +59,7 @@ With my breadth of models, priors, and inferences, I can formally test multiple 
 7. Pennec, X., Sommer, S., & Fletcher, T. (2019). Riemannian Geometric statistics in medical image analysis. Academic Press.
 8. Murphy, K. P. (2022). Probabilistic Machine Learning: An Introduction. MIT Press.
 
-## Future Directions after MS Thesis
+## Future Directions After MS Thesis
 
 *300 word limit*
 
