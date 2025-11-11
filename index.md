@@ -7,20 +7,18 @@ title: Ethan Davis
 
 <a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> | <a href="assets/files/Ethan_Davis_Resume_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 
-I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines.
+<!-- I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines. -->
 
 # Table of Contents
 
-* [Research Experience](#research-experience)
-  * [MS Thesis](#ms-thesis)
-  * [Future Directions of MS Thesis](#future-directions-after-ms-thesis)
-  * [Additional Research](#additional-research)
-
-<!-- # Education
-
-**M.S. Computer Science, University of Washington, 2024–2026**  
-**B.S. Computer Science, Oregon State University, 2020–2022**  
-**B.S. Mathematics, University of Portland, 2011–2015** -->
+- [Table of Contents](#table-of-contents)
+- [Research Experience](#research-experience)
+  - [MS Thesis](#ms-thesis)
+    - [MS Thesis References](#ms-thesis-references)
+  - [Future Directions of MS Thesis](#future-directions-of-ms-thesis)
+    - [Future Directions References](#future-directions-references)
+  - [Additional Research](#additional-research)
+    - [Additional Research References](#additional-research-references)
 
 # Research Experience
 
@@ -85,7 +83,7 @@ Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are 
 
 In the year since starting my MS I explored several directions of research. Some of these rely on my cloud computing and systems architecture background more than statistical or ML modeling which is central to my MS thesis. Of these projects, only the 400-page textbook on data structures and algorithms that I authored was worked on before starting my MS.
 
-Metaheuristic algorithms such as evolutionary learning are modern techniques for solving challenging optimization problems such as those in discrete space where exhaustive search solutions have combinatorial complexity [[3]](#additional-research-references). Explore-Exploit-Evaluate (EEE) is a framework I used to explore ant colony optimization (ACO) benchmarks for solving the traveling salesman problem (TSP) [[1]](#additional-research-references). I implemented ACO in Java and the Hadoop MapReduce framework [[2]](#additional-research-references). My publicly available software repository has documentation I wrote for creating a distributed Hadoop MapReduce cluster of AWS EC2 instances, and is how I ran ACO to solve the TSP.
+Metaheuristic algorithms such as evolutionary learning are modern techniques for solving challenging optimization problems such as those in discrete space where exhaustive search solutions have combinatorial complexity [[3]](#additional-research-references). Explore-Exploit-Evaluate (EEE) is a framework I used to explore ant colony optimization (ACO) benchmarks for solving the traveling salesman problem (TSP) [[1]](#additional-research-references). I implemented ACO in Java and the Hadoop MapReduce framework [[2]](#additional-research-references). My publicly available software repository has documentation I wrote for creating a distributed Hadoop MapReduce cluster of AWS EC2 instances, and is how I ran ACO to solve the TSP. This documentation is also accessible as a <a href="https://medium.com/@davisethan/hadoop-cluster-in-aws-ec2-ac982d91b1f6" target="_blank" rel="noopener noreferrer">Medium post</a>.
 
 ![High Performance Matrix Multiplication](assets/images/gemm.png)
 
@@ -94,6 +92,10 @@ High performance matrix multiplication is the backbone of modern deep learning [
 ![Olivetti Faces](assets/images/olivetti_faces.png)
 
 Linear algebra is the foundation of ML pillars that include principal component analysis (PCA) for dimensionality reduction [[7]](#additional-research-references). I wrote proofs of correctness for numerical linear algebra eigenvalue decomposition (EVD) and singular value decomposition (SVD) algorithms, the QR method and the power method with deflation [[8, 9]](#additional-research-references). I went on to implement these numerical algorithms in C, requiring specialized loop fusion to prevent numerical underflow [[10]](#additional-research-references).
+
+Data structures and algorithms (DSA) are core to efficient computation. They are also classic demonstrations of problem-solving for software engineering. In a 400-page textbook that I authored, I introduce over 20 categories of strategies for solving DSA problems, and when to use them [[11, 12]](#additional-research-references). Over 120 DSA problems are presented with production software solutions, unit tests, explanation, and complexity analysis. The textbook is also available in the format of a <a href="https://medium.com/data-structures-and-algorithms-dsa" target="_blank" rel="noopener noreferrer">Medium publication</a>.
+
+Triangle counting is used to analyze graphs such as social networks where a dense cluster of triangles indicates the existence of a community. I implemented triangle counting in Java and the Apache Spark framework [[13]](#additional-research-references). I also wrote documentation for how I created an Apache Spark cluster of AWS EC2 instances for distributed, cloud computing execution of my algorithm in my publicly available software repository. This documentation can also be accessed as a <a href="https://medium.com/@davisethan/spark-cluster-in-aws-ec2-8cd3e0992d99" target="_blank" rel="noopener noreferrer">Medium post</a>.
 
 ### Additional Research References
 
@@ -107,27 +109,11 @@ Linear algebra is the foundation of ML pillars that include principal component 
 8. Strang, G. (2016). Introduction to linear algebra. Wellesley-Cambridge Press.
 9. Davis, E. (2025). Linear Algebra for Image Compression. Zenodo. https://doi.org/10.5281/zenodo.17180358
 10. Ethan Davis. (2025). davisethan/eigenface: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299529
+11. Davis, E. (2025). Data Structures and Algorithms. Zenodo. https://doi.org/10.5281/zenodo.17297422
+12. Ethan Davis. (2025). davisethan/data_structures_algorithms: DOI release (v1.0.2). Zenodo. https://doi.org/10.5281/zenodo.17289626
+13. Ethan Davis. (2025). davisethan/triangle_counting: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299086
 
-# Technical Reports
-
-|Paper|
-|---|
-|<a href="https://doi.org/10.48550/arXiv.2510.05027" target="_blank" rel="noopener noreferrer">Metaheuristic Algorithms for Combinatorial Optimization</a>|
-|<a href="https://doi.org/10.48550/arXiv.2509.04594" target="_blank" rel="noopener noreferrer">High Performance Matrix Multiplication</a>|
-|<a href="https://doi.org/10.5281/zenodo.17180358" target="_blank" rel="noopener noreferrer">Linear Algebra for Image Compression</a>|
-|<a href="https://doi.org/10.5281/zenodo.17297422" target="_blank" rel="noopener noreferrer">Data Structures and Algorithms</a>|
-
-# Software & Reproducibility
-
-|Software|
-|---|
-|<a href="https://doi.org/10.5281/zenodo.17274214" target="_blank" rel="noopener noreferrer">Metaheuristic Algorithms for Combinatorial Optimization</a>|
-|<a href="https://doi.org/10.5281/zenodo.17299758" target="_blank" rel="noopener noreferrer">High Performance Matrix Multiplication</a>|
-|<a href="https://doi.org/10.5281/zenodo.17299529" target="_blank" rel="noopener noreferrer">Linear Algebra for Image Compression</a>|
-|<a href="https://doi.org/10.5281/zenodo.17289626" target="_blank" rel="noopener noreferrer">Data Structures and Algorithms</a>|
-|<a href="https://doi.org/10.5281/zenodo.17299086" target="_blank" rel="noopener noreferrer">Triangle Counting</a>|
-
-# Teaching & Mentoring
+<!-- # Teaching & Mentoring
 
 Assisting Prof. Erika Parsons in updating the course _Mathematics for Machine Learning_, including curriculum design, textbook selection, and assignment development and grading. Independently of the course, I curated MI-EEG BCI research directions and reproducibility standards (MOABB, Riemannian pipelines, GNNs) to align lab efforts and accelerate studies.
 
@@ -152,4 +138,4 @@ Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) d
 
 |Certification|
 |---|
-|<a href="assets/files/pumps_certification.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 Statement of Accomplishment in CUDA workshops</a>|
+|<a href="assets/files/pumps_certification.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 Statement of Accomplishment in CUDA workshops</a>| -->
