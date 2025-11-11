@@ -16,11 +16,13 @@ I am pursuing a PhD in computer science to research Bayesian and sequence machin
     - [Future Directions References](#future-directions-references)
   - [Additional Research](#additional-research)
     - [Additional Research References](#additional-research-references)
-- [Teaching \& Mentoring](#teaching--mentoring)
+- [Teaching and Mentoring](#teaching-and-mentoring)
   - [Teaching Assistant](#teaching-assistant)
     - [Teaching Assistant References](#teaching-assistant-references)
   - [Research Mentor](#research-mentor)
     - [Research Mentor References](#research-mentor-references)
+- [Selected Industry Experience](#selected-industry-experience)
+  - [Software Engineer at SeekOut](#software-engineer-at-seekout)
 
 # Research Experience
 
@@ -125,13 +127,13 @@ Triangle counting is used to analyze graphs such as social networks where a dens
 12. Ethan Davis. (2025). davisethan/data_structures_algorithms: DOI release (v1.0.2). Zenodo. https://doi.org/10.5281/zenodo.17289626
 13. Ethan Davis. (2025). davisethan/triangle_counting: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299086
 
-# Teaching & Mentoring
+# Teaching and Mentoring
 
 ## Teaching Assistant
 
-*100 word limit*
+*150 word limit*
 
-Mathematics foundations linear algebra, vector calculus, probability and statistics, and optimization are prerequisite to researching pillars of machine learning regression, dimensionality reduction, density estimation, and classification. I am helping my MS advisor update a course she has authored by surveying textbooks that can be used to teach mathematics for machine learning. Duda et al. [(2012)](#teaching-assistant-references) is the current textbook being used, and I have considered Bishop [(2016)]((#teaching-assistant-references)), though I believe Deisenroth et al. [(2020)]((#teaching-assistant-references)) is the best first introduction to the subject. Based on Deisenroth et al. [(2020)]((#teaching-assistant-references)) I have also drafted a lecture schedule and lecture slides.
+Mathematics foundations linear algebra, vector calculus, probability and statistics, and optimization are prerequisite to researching pillars of machine learning regression, dimensionality reduction, density estimation, and classification. I am helping my MS advisor update a course she has authored by surveying textbooks that can be used to teach mathematics for machine learning. Duda et al. [(2012)](#teaching-assistant-references) is the current textbook being used, and I have considered Bishop [(2016)]((#teaching-assistant-references)), though I believe Deisenroth et al. [(2020)]((#teaching-assistant-references)) is the best first introduction to the subject. Based on Deisenroth et al. [(2020)]((#teaching-assistant-references)) I have also drafted a lecture schedule and lecture slides. Assignments/projects appropriate for this curriculum include design and implementation of numerical eigenvalue decomposition, automated differentation for backpropagation, tensor computation of the Hessian matrix, gradient descent, and Monte Carlo integration.
 
 ### Teaching Assistant References
 
@@ -141,9 +143,9 @@ Mathematics foundations linear algebra, vector calculus, probability and statist
 
 ## Research Mentor
 
-*100 word limit*
+*150 word limit*
 
-The Smart Neurorehabilitation Ecosystem at the University of Washington researchers BCI assisted therapies and robotics control. I have written internal documentation that reduces onboarding time from 3+ months to 1 week. This documentation centralizes BCI and ML textbooks and literature, and software libraries that describe what is BCI research, how to design experiments, and research directions [[1, 2, 3]](#research-mentor-references). it is also a source for experienced researchers seeking encyclopedic references [[4, 5]](#research-mentor-references). As part of my MS research, I have made it easier for my lab to perform useful and statistically valid BCI model benchmarks.
+The Smart Neurorehabilitation Ecosystem at the University of Washington researchers BCI assisted therapies and robotics control. I have written internal documentation that reduces onboarding time from 3+ months to 1 week. This documentation centralizes BCI and ML textbooks and literature, and software libraries that describe what is BCI research, how to design experiments, and research directions [[1, 2, 3]](#research-mentor-references). it is also a source for experienced researchers seeking encyclopedic references [[4, 5]](#research-mentor-references). As part of my MS research, I have made it easier for my lab to perform useful and statistically valid BCI model benchmarks. These lab standards match real-world results such as benchmarks against state-of-the-art classifiers based on spatial filters computed directly on the Riemannian geometric manifold of the covariance matrix from EEG biosignals [[1, 2]](#research-mentor-references).
 
 ### Research Mentor References
 
@@ -153,11 +155,13 @@ The Smart Neurorehabilitation Ecosystem at the University of Washington research
 4. Wolpaw, J., & Wolpaw, E. W. (2012). Brain-Computer interfaces: Principles and Practice. OUP USA.
 5. Murphy, K. P. (2023). Probabilistic Machine Learning: Advanced Topics. MIT Press.
 
-<!-- # Selected Industry Experience
+# Selected Industry Experience
 
 ## Software Engineer at SeekOut
 
-<a href="https://www.seekout.com/" target="_blank" rel="noopener noreferrer">SeekOut</a> builds a search engine to be used by job recruiters to find qualified candidates. When I worked there it was a unicorn startup with around 150 employees.  -->
+*150 word limit*
+
+<a href="https://www.seekout.com/" target="_blank" rel="noopener noreferrer">SeekOut</a> builds a search engine to be used by job recruiters to find qualified candidates. When I worked at SeekOut it was a unicorn startup with 150 employees, contracting data from LinkedIn, Google Scholar, and other applicant tracking systems (ATSs). As a software engineer of the data integration team, I wrote extract, transform, load (ETL) pipelines from multiple sources of data to our centralized sink that was staging for search indexing. I primarily used a C# .NET and Azure cloud computing stack. The largest integration I owned supported customer accounts worth over $1 million. In addition to my functional deliverables, I created UML, documentation, and unit tests to drive the design of maintainable, SOLID software services that supported scaling the number of integrations and amount of data being ingested. The reason I left SeekOut is because I want to pursue research.
 
 <!-- # Selected Industry Experience
 
