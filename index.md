@@ -7,11 +7,8 @@ title: Ethan Davis
 
 <a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> | <a href="assets/files/Ethan_Davis_Resume_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 
-<!-- I am pursuing a PhD in building scalable and reliable machine learning systems that draw on probabilistic models, distributed systems, and high performance computing. At the University of Washington I research uncertainty aware deep learning to strengthen AI deployed in safety critical applications. I have seven years of industry experience as a software engineer, building distributed systems, scalable cloud infrastructure, and resilient data pipelines. -->
+I am pursuing a PhD in computer science to research Bayesian and sequence machine learning for healthcare. My interests are generative modeling and reinforcement learning. Additional interests I have are representation learning and transfer learning.
 
-# Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [Research Experience](#research-experience)
   - [MS Thesis](#ms-thesis)
     - [MS Thesis References](#ms-thesis-references)
@@ -59,7 +56,7 @@ With my breadth of models, priors, and inferences, I can formally test multiple 
 
 Sequence modeling can be used for MI-EEG that is sequential data. The core uncertainty quantification (UQ) of Bayesian ML benefits Markov decision processes (MDPs) under uncertainty, spatiotemporal dynamical systems, and in general reinforcement learning [[1, 2, 3, 4]](#future-directions-references). Furthermore, generative models can be used to train ML that is robust to distribution shift, a problem common to classifiers of noisy MI-EEG data [[2, 4, 5]](#future-directions-references).
 
-Inductive bias discovery such as graph learning can also be used to model MI-EEG [[2, 6]](). These techniques find hidden structures, assumptions in data that can be encoded in ML models for better representation. Examples include geometric deep learning that exploits symmetries of data during training [[7]](#future-directions-references). Another example is topological data analysis (TDA) that may use persistent homology to mine global features of data that are invariant to noise and deformation [[8]](#future-directions-references).
+Representation learning and inductive bias discovery such as graph learning can also be used to model MI-EEG [[2, 6]](). These techniques find hidden structures, assumptions in data that can be encoded in ML models for better representation. Examples include geometric deep learning that exploits symmetries of data during training [[7]](#future-directions-references). Another example is topological data analysis (TDA) that may use persistent homology to mine global features of data that are invariant to noise and deformation [[8]](#future-directions-references).
 
 Transfer learning and foundation models are also impactful directions of BCI research [[4]](#future-directions-references). Statistical learning theory (SLT) such as probably approximately correct (PAC) bounds describe the theoretical generalizability of ML models [[9]](#future-directions-references). SLT can be used to describe the effectiveness of different types of BCI classifiers to model MI-EEG data. Additionally, SLT can help BCI researchers that desire MI-EEG classifers that can quickly adapt to cross-session and cross-subject scenarios.
 
