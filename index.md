@@ -16,6 +16,9 @@ I am pursuing a PhD in computer science to research Bayesian and sequence machin
     - [Future Directions References](#future-directions-references)
   - [Additional Research](#additional-research)
     - [Additional Research References](#additional-research-references)
+- [Teaching \& Mentoring](#teaching--mentoring)
+  - [Teaching Assistant](#teaching-assistant)
+    - [Teaching Assistant References](#teaching-assistant-references)
 
 # Research Experience
 
@@ -111,6 +114,20 @@ Triangle counting is used to analyze graphs such as social networks where a dens
 11. Davis, E. (2025). Data Structures and Algorithms. Zenodo. https://doi.org/10.5281/zenodo.17297422
 12. Ethan Davis. (2025). davisethan/data_structures_algorithms: DOI release (v1.0.2). Zenodo. https://doi.org/10.5281/zenodo.17289626
 13. Ethan Davis. (2025). davisethan/triangle_counting: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299086
+
+# Teaching & Mentoring
+
+## Teaching Assistant
+
+*100 word limit*
+
+Mathematics foundations linear algebra, vector calculus, probability and statistics, and optimization are prerequisite to researching pillars of machine learning regression, dimensionality reduction, density estimation, and classification. I am helping my MS advisor update a course she has authored by surveying textbooks that can be used to teach mathematics for machine learning. Duda et al. [(2012)](#teaching-assistant-references) is the current textbook being used, and I have considered Bishop [(2016)]((#teaching-assistant-references)), though I believe Deisenroth et al. [(2020)]((#teaching-assistant-references)) is the best first introduction to the subject. Based on Deisenroth et al. [(2020)]((#teaching-assistant-references)) I have also drafted a lecture schedule and lecture slides.
+
+### Teaching Assistant References
+
+1. Deisenroth, M. P., Faisal, A. A., & Ong, C. S. (2020). Mathematics for machine learning. Cambridge University Press.
+2. Bishop, C. M. (2016). Pattern recognition and machine learning. Springer.
+3. Duda, R. O., Hart, P. E., & Stork, D. G. (2012). Pattern classification. John Wiley & Sons.
 
 <!-- # Teaching & Mentoring
 
