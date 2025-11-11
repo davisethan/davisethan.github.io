@@ -67,7 +67,7 @@ Transfer learning and foundation models are also impactful directions of BCI res
 
 Ensemble models based on simple strategies have some of the best performances recorded for Bayesian ML [[2]](#additional-research-references). The techniques for combining models are voting, bagging, boosting, and stacking [[1]](#additional-research-references). Multimodal and hybrid learning is also valuable for BCI research because it lets devices model multiple sources of data such as muscle activations from EMG and multiple data paradigms like electrical potentials from EEG [[2]](#additional-research-references). Together, ensemble models reduce data uncertainty (aleatoric), and multimodal, hybrid learning lowers model uncertainty (epistemic).
 
-![Parameter Space Search](assets/images/samples.png)
+<!-- ![Parameter Space Search](assets/images/samples.png) -->
 
 Model selection and hyperparameter search constrained to k-fold cross-validation grid search can have the undesirable effect of sparse coverage of the parameter space in higher dimensions. Pseudo-random sampling (Sobol, Latin hypercubes), metaheuristic and evolutionary algorithms, reinforcement learning, and comprehensive Bayesian model selection are less naive approaches to model and hyperparameter optimization [[12, 13]](#additional-research-references). Therefore, another direction of research is model selection and hyperparameter search for a given ML algorithm.
 
@@ -101,7 +101,7 @@ Metaheuristic algorithms such as evolutionary learning are modern techniques for
 
 High performance matrix multiplication is the backbone of modern deep learning [[4]](#additional-research-references). I built high performance general matrix multiplication (GEMM) in Nvidia CUDA, and CPU analogs using OpenMP and C++ Threads [[6]](#additional-research-references). I benchmarked these programs against third party libraries CuBLAS and BLAS. Formal statistcal analysis shows that for large square matrix sizes these five algorithms have distinct ranks of performance measured in terms of floating point operations per second (FLOPS) [[5]](#additional-research-references).
 
-![Olivetti Faces](assets/images/olivetti_faces.png)
+<!-- ![Olivetti Faces](assets/images/olivetti_faces.png) -->
 
 Linear algebra is the foundation of ML pillars that include principal component analysis (PCA) for dimensionality reduction [[7]](#additional-research-references). I wrote proofs of correctness for numerical linear algebra eigenvalue decomposition (EVD) and singular value decomposition (SVD) algorithms, the QR method and the power method with deflation [[8, 9]](#additional-research-references). I went on to implement these numerical algorithms in C, requiring specialized loop fusion to prevent numerical underflow [[10]](#additional-research-references).
 
