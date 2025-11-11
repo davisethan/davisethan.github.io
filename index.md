@@ -3,7 +3,7 @@ layout: default
 title: Ethan Davis
 ---
 
-![Ethan Davis](assets/images/ethan_davis.jpg)
+![Ethan Davis](assets/images/ethan_davis.jpeg)
 
 <a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> | <a href="assets/files/Ethan_Davis_Resume_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 
