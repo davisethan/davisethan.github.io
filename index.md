@@ -67,7 +67,7 @@ Transfer learning and foundation models are also impactful directions of BCI res
 
 Ensemble models based on simple strategies have some of the best performances recorded for Bayesian ML [[2]](#additional-research-references). The techniques for combining models are voting, bagging, boosting, and stacking [[1]](#additional-research-references). Multimodal and hybrid learning is also valuable for BCI research because it lets devices model multiple sources of data such as muscle activations from EMG and multiple data paradigms like electrical potentials from EEG [[2]](#additional-research-references). Together, ensemble models reduce data uncertainty (aleatoric), and multimodal, hybrid learning lowers model uncertainty (epistemic).
 
-![Parameter Space Search](assets/images/samples.png)
+<!-- ![Parameter Space Search](assets/images/samples.png) -->
 
 Model selection and hyperparameter search constrained to k-fold cross-validation grid search can have the undesirable effect of sparse coverage of the parameter space in higher dimensions. Pseudo-random sampling (Sobol, Latin hypercubes), metaheuristic and evolutionary algorithms, reinforcement learning, and comprehensive Bayesian model selection are less naive approaches to model and hyperparameter optimization [[12, 13]](#additional-research-references). Therefore, another direction of research is model selection and hyperparameter search for a given ML algorithm.
 
@@ -155,7 +155,9 @@ The Smart Neurorehabilitation Ecosystem at the University of Washington research
 
 <!-- # Selected Industry Experience
 
-## Software Engineer at SeekOut -->
+## Software Engineer at SeekOut
+
+<a href="https://www.seekout.com/" target="_blank" rel="noopener noreferrer">SeekOut</a> builds a search engine to be used by job recruiters to find qualified candidates. When I worked there it was a unicorn startup with around 150 employees.  -->
 
 <!-- # Selected Industry Experience
 
