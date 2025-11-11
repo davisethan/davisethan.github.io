@@ -19,6 +19,8 @@ I am pursuing a PhD in computer science to research Bayesian and sequence machin
 - [Teaching \& Mentoring](#teaching--mentoring)
   - [Teaching Assistant](#teaching-assistant)
     - [Teaching Assistant References](#teaching-assistant-references)
+  - [Research Mentor](#research-mentor)
+    - [Research Mentor References](#research-mentor-references)
 
 # Research Experience
 
@@ -26,7 +28,7 @@ I am pursuing a PhD in computer science to research Bayesian and sequence machin
 
 *500 word limit*
 
-The goal of my MS thesis is to evaluate when Bayesian ML benefits motor-imagery electroencephalogram (MI-EEG) brain-computer interface (BCI) classification [[3, 4]](#ms-thesis-references). Motivations for MI-EEG/BCI research include assisting neurorehabilitation therapies and controlling robotic prosthetics [[2]](#ms-thesis-references). I compare analogous frequentist and Bayesian ML models from the three most popular types of MI-EEG classifiers: firstly, linear spatial filters, or secondly, Riemannian geometric spatial filters, plus training models, and thirdly deep learning [[1]](#ms-thesis-references). Metrics used to measure predictive performance come from discrimination, calibration, and sharpness [[3]](#ms-thesis-references).
+The goal of my MS thesis is to evaluate when Bayesian ML benefits motor-imagery electroencephalogram (MI-EEG) brain-computer interface (BCI) classification [[3, 4]](#ms-thesis-references). Motivations for MI-EEG/BCI research include assisting neurorehabilitation therapies and controlling robotic prosthetics [[2]](#ms-thesis-references). I compare analogous frequentist and Bayesian ML models from the three most popular types of MI-EEG classifiers: firstly, linear spatial filters, or secondly, Riemannian geometric spatial filters, plus training models, and thirdly deep learning [[1]](#ms-thesis-references). Metrics used to measure predictive performance come from discrimination, calibration, and sharpness [[4]](#ms-thesis-references).
 
 ![End-to-End Pipeline](assets/images/e2e_pipeline.png)
 
@@ -55,13 +57,19 @@ With my breadth of models, priors, and inferences, I can formally test multiple 
 
 ## Future Directions of MS Thesis
 
-*300 word limit*
+*500 word limit*
 
 Sequence modeling can be used for MI-EEG that is sequential data. The core uncertainty quantification (UQ) of Bayesian ML benefits Markov decision processes (MDPs) under uncertainty, spatiotemporal dynamical systems, and in general reinforcement learning [[1, 2, 3, 4]](#future-directions-references). Furthermore, generative models can be used to train ML that is robust to distribution shift, a problem common to classifiers of noisy MI-EEG data [[2, 4, 5]](#future-directions-references).
 
 Representation learning and inductive bias discovery such as graph learning can also be used to model MI-EEG [[2, 6]](). These techniques find hidden structures, assumptions in data that can be encoded in ML models for better representation. Examples include geometric deep learning that exploits symmetries of data during training [[7]](#future-directions-references). Another example is topological data analysis (TDA) that may use persistent homology to mine global features of data that are invariant to noise and deformation [[8]](#future-directions-references).
 
 Transfer learning and foundation models are also impactful directions of BCI research [[4]](#future-directions-references). Statistical learning theory (SLT) such as probably approximately correct (PAC) bounds describe the theoretical generalizability of ML models [[9]](#future-directions-references). SLT can be used to describe the effectiveness of different types of BCI classifiers to model MI-EEG data. Additionally, SLT can help BCI researchers that desire MI-EEG classifers that can quickly adapt to cross-session and cross-subject scenarios.
+
+Ensemble models based on simple strategies have some of the best performances recorded for Bayesian ML [[2]](#additional-research-references). The techniques for combining models are voting, bagging, boosting, and stacking [[1]](#additional-research-references). Multimodal and hybrid learning is also valuable for BCI research because it lets devices model multiple sources of data such as muscle activations from EMG and multiple data paradigms like electrical potentials from EEG [[2]](#additional-research-references). Together, ensemble models reduce data uncertainty (aleatoric), and multimodal, hybrid learning lowers model uncertainty (epistemic).
+
+![Parameter Space Search](assets/images/samples.png)
+
+Model selection and hyperparameter search constrained to k-fold cross-validation grid search can have the undesirable effect of sparse coverage of the parameter space in higher dimensions. Pseudo-random sampling (Sobol, Latin hypercubes), metaheuristic and evolutionary algorithms, reinforcement learning, and comprehensive Bayesian model selection are less naive approaches to model and hyperparameter optimization [[12, 13]](#additional-research-references). Therefore, another direction of research is model selection and hyperparameter search for a given ML algorithm.
 
 Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are interesting to me. ML is capable of improving our understanding and delivery of healthcare and medicine. In fact it is already doing so. Medical imaging technologies have improved from Riemannian geometrics statistics analysis and algorithms [[10]](#future-directions-references). Graph neural networks are rapidly reducing drug discovery costs [[6, 7]](#future-directions-references). Furthermore, time-series models of biosignals can drive the design of health monitoring wearables, including MI-EEG/BCI neuroscience devices [[4, 11]](#future-directions-references).
 
@@ -78,6 +86,8 @@ Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are 
 9. Shalev-Shwartz, S., & Ben-David, S. (2014). Understanding machine learning: From Theory to Algorithms. Cambridge University Press.
 10. Pennec, X., Sommer, S., & Fletcher, T. (2019). Riemannian Geometric statistics in medical image analysis. Academic Press.
 11. Prandoni, P., & Vetterli, M. (2008). Signal processing for communications. Collection Savoir suisse.
+12. Deisenroth, M. P., Faisal, A. A., & Ong, C. S. (2020). Mathematics for machine learning. Cambridge University Press.
+13. Tsai, C., & Chiang, M. (2023). Handbook of Metaheuristic Algorithms: From Fundamental Theories to Advanced Applications. Elsevier.
 
 ## Additional Research
 
@@ -129,11 +139,21 @@ Mathematics foundations linear algebra, vector calculus, probability and statist
 2. Bishop, C. M. (2016). Pattern recognition and machine learning. Springer.
 3. Duda, R. O., Hart, P. E., & Stork, D. G. (2012). Pattern classification. John Wiley & Sons.
 
-<!-- # Teaching & Mentoring
+## Research Mentor
 
-Assisting Prof. Erika Parsons in updating the course _Mathematics for Machine Learning_, including curriculum design, textbook selection, and assignment development and grading. Independently of the course, I curated MI-EEG BCI research directions and reproducibility standards (MOABB, Riemannian pipelines, GNNs) to align lab efforts and accelerate studies.
+*100 word limit*
 
-# Selected Industry Experience
+The Smart Neurorehabilitation Ecosystem at the University of Washington researchers BCI assisted therapies and robotics control. I have written internal documentation that reduces onboarding time from 3+ months to 1 week. This documentation centralizes BCI and ML textbooks and literature, and software libraries that describe what is BCI research, how to design experiments, and research directions [[1, 2, 3]](#research-mentor-references). it is also a source for experienced researchers seeking encyclopedic references [[4, 5]](#research-mentor-references). As part of my MS research, I have made it easier for my lab to perform useful and statistically valid BCI model benchmarks.
+
+### Research Mentor References
+
+1. Chevallier, S., Carrara, I., Aristimunha, B., Guetschel, P., Sedlar, S., Lopes, B., Velut, S., Khazem, S., Moreau, T. (2021). The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark. In J. Neural Eng.
+2. Nam, C. S., Nijholt, A., & Lotte, F. (2018). Brain–Computer Interfaces Handbook: Technological and Theoretical Advances. CRC Press.
+3. Bishop, C. M. (2016). Pattern recognition and machine learning. Springer.
+4. Wolpaw, J., & Wolpaw, E. W. (2012). Brain-Computer interfaces: Principles and Practice. OUP USA.
+5. Murphy, K. P. (2023). Probabilistic Machine Learning: Advanced Topics. MIT Press.
+
+<!-- # Selected Industry Experience
 
 **Software Engineer**, SeekOut – Bellevue, WA (2022–2024)  
 Built and optimized data pipelines and distributed systems in C# and Azure, applying object-oriented design, SOLID principles, and automated testing to improve scalability, reliability, and maintainability of large-scale ETL and search infrastructure.
@@ -142,15 +162,15 @@ Built and optimized data pipelines and distributed systems in C# and Azure, appl
 Designed a fault-tolerant, microservices-based web application using Java, Spring Boot, Node.js, and AWS, implementing distributed systems principles for scalable cloud deployment.
 
 **Software Engineer**, StackBrew – Redmond, WA (2015–2017)  
-Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) deployed on GCP, exploring collaborative editing algorithms (OT and CRDTs) to inform distributed software design.
+Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) deployed on GCP, exploring collaborative editing algorithms (OT and CRDTs) to inform distributed software design. -->
 
-# Conference Posters
+<!-- # Conference Posters
 
 |Conference|
 |---|
-|<a href="assets/files/pumps_poster.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 ACM Europe Summer School</a>|
+|<a href="assets/files/pumps_poster.pdf" target="_blank" rel="noopener noreferrer">PUMPS+AI 2025 ACM Europe Summer School</a>| -->
 
-# Certifications
+<!-- # Certifications
 
 |Certification|
 |---|
