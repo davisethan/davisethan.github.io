@@ -13,7 +13,8 @@ I am pursuing a PhD in building scalable and reliable machine learning systems t
 
 * [Research Experience](#research-experience)
   * [MS Thesis](#ms-thesis)
-  * [Future Directions After MS Thesis](#future-directions-after-ms-thesis)
+  * [Future Directions of MS Thesis](#future-directions-after-ms-thesis)
+  * [Additional Research](#additional-research)
 
 <!-- # Education
 
@@ -79,6 +80,33 @@ Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are 
 9. Shalev-Shwartz, S., & Ben-David, S. (2014). Understanding machine learning: From Theory to Algorithms. Cambridge University Press.
 10. Pennec, X., Sommer, S., & Fletcher, T. (2019). Riemannian Geometric statistics in medical image analysis. Academic Press.
 11. Prandoni, P., & Vetterli, M. (2008). Signal processing for communications. Collection Savoir suisse.
+
+## Additional Research
+
+In the year since starting my MS I explored several directions of research. Some of these rely on my cloud computing and systems architecture background more than statistical or ML modeling which is central to my MS thesis. Of these projects, only the 400-page textbook on data structures and algorithms that I authored was worked on before starting my MS.
+
+Metaheuristic algorithms such as evolutionary learning are modern techniques for solving challenging optimization problems such as those in discrete space where exhaustive search solutions have combinatorial complexity [[3]](#additional-research-references). Explore-Exploit-Evaluate (EEE) is a framework I used to explore ant colony optimization (ACO) benchmarks for solving the traveling salesman problem (TSP) [[1]](#additional-research-references). I implemented ACO in Java and the Hadoop MapReduce framework [[2]](#additional-research-references). My publicly available software repository has documentation I wrote for creating a distributed Hadoop MapReduce cluster of AWS EC2 instances, and is how I ran ACO to solve the TSP.
+
+![High Performance Matrix Multiplication](assets/images/gemm.png)
+
+High performance matrix multiplication is the backbone of modern deep learning [[4]](#additional-research-references). I built high performance general matrix multiplication (GEMM) in Nvidia CUDA, and CPU analogs using OpenMP and C++ Threads [[6]](#additional-research-references). I benchmarked these programs against third party libraries CuBLAS and BLAS. Formal statistcal analysis shows that for large square matrix sizes these five algorithms have distinct ranks of performance measured in terms of floating point operations per second (FLOPS) [[5]](#additional-research-references).
+
+![Olivetti Faces](assets/images/olivetti_faces.png)
+
+Linear algebra is the foundation of ML pillars that include principal component analysis (PCA) for dimensionality reduction [[7]](#additional-research-references). I wrote proofs of correctness for numerical linear algebra eigenvalue decomposition (EVD) and singular value decomposition (SVD) algorithms, the QR method and the power method with deflation [[8, 9]](#additional-research-references). I went on to implement these numerical algorithms in C, requiring specialized loop fusion to prevent numerical underflow [[10]](#additional-research-references).
+
+### Additional Research References
+
+1. Davis, E. (2025, October 6). Exploration-Exploitation-Evaluation (EEE): a framework for metaheuristic algorithms in combinatorial optimization. arXiv.org. https://arxiv.org/abs/2510.05027
+2. Ethan Davis. (2025). davisethan/aco: Badge release (v1.0.2). Zenodo. https://doi.org/10.5281/zenodo.17274214
+3. Tsai, C., & Chiang, M. (2023). Handbook of Metaheuristic Algorithms: From Fundamental Theories to Advanced Applications. Elsevier.
+4. Hwu, W. W., Kirk, D. B., & Hajj, I. E., PhD. (2022). Programming massively parallel processors: A Hands-on Approach. Morgan Kaufmann.
+5. Davis, E. (2025a). High performance matrix multiplication. arXiv (Cornell University). https://doi.org/10.48550/arxiv.2509.04594
+6. Ethan Davis. (2025). davisethan/gemm: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299758
+7. Deisenroth, M. P., Faisal, A. A., & Ong, C. S. (2020). Mathematics for machine learning. Cambridge University Press.
+8. Strang, G. (2016). Introduction to linear algebra. Wellesley-Cambridge Press.
+9. Davis, E. (2025). Linear Algebra for Image Compression. Zenodo. https://doi.org/10.5281/zenodo.17180358
+10. Ethan Davis. (2025). davisethan/eigenface: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299529
 
 # Technical Reports
 
