@@ -81,6 +81,8 @@ Healthcare and biology applications beyond MI-EEG/BCI neuroscience research are 
 
 ## Additional Research
 
+*500 word limit*
+
 In the year since starting my MS I explored several directions of research. Some of these rely on my cloud computing and systems architecture background more than statistical or ML modeling which is central to my MS thesis. Of these projects, only the 400-page textbook on data structures and algorithms that I authored was worked on before starting my MS.
 
 Metaheuristic algorithms such as evolutionary learning are modern techniques for solving challenging optimization problems such as those in discrete space where exhaustive search solutions have combinatorial complexity [[3]](#additional-research-references). Explore-Exploit-Evaluate (EEE) is a framework I used to explore ant colony optimization (ACO) benchmarks for solving the traveling salesman problem (TSP) [[1]](#additional-research-references). I implemented ACO in Java and the Hadoop MapReduce framework [[2]](#additional-research-references). My publicly available software repository has documentation I wrote for creating a distributed Hadoop MapReduce cluster of AWS EC2 instances, and is how I ran ACO to solve the TSP. This documentation is also accessible as a <a href="https://medium.com/@davisethan/hadoop-cluster-in-aws-ec2-ac982d91b1f6" target="_blank" rel="noopener noreferrer">Medium post</a>.
