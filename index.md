@@ -3,7 +3,7 @@ layout: default
 title: Ethan Davis
 ---
 
-![Ethan Davis](assets/images/ethan_davis.jpeg)
+<!-- ![Ethan Davis](assets/images/ethan_davis.jpeg) -->
 
 <a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> | <a href="assets/files/Ethan_Davis_Resume_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 
@@ -67,7 +67,7 @@ Transfer learning and foundation models are also impactful directions of BCI res
 
 Ensemble models based on simple strategies have some of the best performances recorded for Bayesian ML [[2]](#additional-research-references). The techniques for combining models are voting, bagging, boosting, and stacking [[1]](#additional-research-references). Multimodal and hybrid learning is also valuable for BCI research because it lets devices model multiple sources of data such as muscle activations from EMG and multiple data paradigms like electrical potentials from EEG [[2]](#additional-research-references). Together, ensemble models reduce data uncertainty (aleatoric), and multimodal, hybrid learning lowers model uncertainty (epistemic).
 
-![Parameter Space Search](assets/images/samples.png)
+<!-- ![Parameter Space Search](assets/images/samples.png) -->
 
 Model selection and hyperparameter search constrained to k-fold cross-validation grid search can have the undesirable effect of sparse coverage of the parameter space in higher dimensions. Pseudo-random sampling (Sobol, Latin hypercubes), metaheuristic and evolutionary algorithms, reinforcement learning, and comprehensive Bayesian model selection are less naive approaches to model and hyperparameter optimization [[12, 13]](#additional-research-references). Therefore, another direction of research is model selection and hyperparameter search for a given ML algorithm.
 
@@ -152,6 +152,10 @@ The Smart Neurorehabilitation Ecosystem at the University of Washington research
 3. Bishop, C. M. (2016). Pattern recognition and machine learning. Springer.
 4. Wolpaw, J., & Wolpaw, E. W. (2012). Brain-Computer interfaces: Principles and Practice. OUP USA.
 5. Murphy, K. P. (2023). Probabilistic Machine Learning: Advanced Topics. MIT Press.
+
+<!-- # Selected Industry Experience
+
+## Software Engineer at SeekOut -->
 
 <!-- # Selected Industry Experience
 
