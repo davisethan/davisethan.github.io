@@ -7,7 +7,7 @@ title: Ethan Davis
 
 <a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a> | <a href="assets/files/Ethan_Davis_Resume_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 
-I am pursuing a PhD in computer science to research Bayesian and sequence machine learning for healthcare. My interests are generative modeling and reinforcement learning. Additional interests I have are representation learning and transfer learning.
+I am pursuing a PhD in computer science to research Bayesian and sequence machine learning for healthcare. My interests are generative modeling and reinforcement learning. Additional interests I have are representation, transfer, and ensemble learning.
 
 - [Research Experience](#research-experience)
   - [MS Thesis](#ms-thesis)
