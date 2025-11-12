@@ -23,6 +23,8 @@ I am pursuing a PhD in computer science to research Bayesian and sequence machin
     - [Research Mentor References](#research-mentor-references)
 - [Selected Industry Experience](#selected-industry-experience)
   - [Software Engineer at SeekOut](#software-engineer-at-seekout)
+  - [Software Engineer at Independent Project](#software-engineer-at-independent-project)
+  - [Software Engineer at StackBrew](#software-engineer-at-stackbrew)
 
 # Research Experience
 
@@ -113,19 +115,19 @@ Triangle counting is used to analyze graphs such as social networks where a dens
 
 ### Additional Research References
 
-1. Davis, E. (2025, October 6). Exploration-Exploitation-Evaluation (EEE): a framework for metaheuristic algorithms in combinatorial optimization. arXiv.org. https://arxiv.org/abs/2510.05027
-2. Ethan Davis. (2025). davisethan/aco: Badge release (v1.0.2). Zenodo. https://doi.org/10.5281/zenodo.17274214
+1. Davis, E. (2025, October 6). Exploration-Exploitation-Evaluation (EEE): a framework for metaheuristic algorithms in combinatorial optimization. arXiv.org. <a href="https://arxiv.org/abs/2510.05027" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2510.05027</a>
+2. Ethan Davis. (2025). davisethan/aco: Badge release (v1.0.2). Zenodo. <a href="https://doi.org/10.5281/zenodo.17274214" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17274214</a>
 3. Tsai, C., & Chiang, M. (2023). Handbook of Metaheuristic Algorithms: From Fundamental Theories to Advanced Applications. Elsevier.
 4. Hwu, W. W., Kirk, D. B., & Hajj, I. E., PhD. (2022). Programming massively parallel processors: A Hands-on Approach. Morgan Kaufmann.
-5. Davis, E. (2025a). High performance matrix multiplication. arXiv (Cornell University). https://doi.org/10.48550/arxiv.2509.04594
-6. Ethan Davis. (2025). davisethan/gemm: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299758
+5. Davis, E. (2025a). High performance matrix multiplication. arXiv (Cornell University). <a href="https://doi.org/10.48550/arxiv.2509.04594" target="_blank" rel="noopener noreferrer">https://doi.org/10.48550/arxiv.2509.04594</a>
+6. Ethan Davis. (2025). davisethan/gemm: DOI release (v1.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.17299758" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17299758</a>
 7. Deisenroth, M. P., Faisal, A. A., & Ong, C. S. (2020). Mathematics for machine learning. Cambridge University Press.
 8. Strang, G. (2016). Introduction to linear algebra. Wellesley-Cambridge Press.
-9. Davis, E. (2025). Linear Algebra for Image Compression. Zenodo. https://doi.org/10.5281/zenodo.17180358
-10. Ethan Davis. (2025). davisethan/eigenface: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299529
-11. Davis, E. (2025). Data Structures and Algorithms. Zenodo. https://doi.org/10.5281/zenodo.17297422
-12. Ethan Davis. (2025). davisethan/data_structures_algorithms: DOI release (v1.0.2). Zenodo. https://doi.org/10.5281/zenodo.17289626
-13. Ethan Davis. (2025). davisethan/triangle_counting: DOI release (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17299086
+9. Davis, E. (2025). Linear Algebra for Image Compression. Zenodo. <a href="" target="_blank" rel="noopener noreferrer">https://medium.com/@davisethan/spark-cluster-in-aws-ec2-8cd3e0992d99</a>
+10. Ethan Davis. (2025). davisethan/eigenface: DOI release (v1.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.17299529" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17299529</a>
+11. Davis, E. (2025). Data Structures and Algorithms. Zenodo. <a href="https://doi.org/10.5281/zenodo.17297422" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17297422</a>
+12. Ethan Davis. (2025). davisethan/data_structures_algorithms: DOI release (v1.0.2). Zenodo. <a href="https://doi.org/10.5281/zenodo.17289626" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17289626</a>
+13. Ethan Davis. (2025). davisethan/triangle_counting: DOI release (v1.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.17299086" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17299086</a>
 
 # Teaching and Mentoring
 
@@ -163,16 +165,20 @@ The Smart Neurorehabilitation Ecosystem at the University of Washington research
 
 <a href="https://www.seekout.com/" target="_blank" rel="noopener noreferrer">SeekOut</a> builds a search engine to be used by job recruiters to find qualified candidates. When I worked at SeekOut it was a unicorn startup with 150 employees, contracting data from LinkedIn, Google Scholar, and other applicant tracking systems (ATSs). As a software engineer of the data integration team, I wrote extract, transform, load (ETL) pipelines from multiple sources of data to our centralized sink that was staging for search indexing. I primarily used a C# .NET and Azure cloud computing stack. The largest integration I owned supported customer accounts worth over $1 million. In addition to my functional deliverables, I created UML, documentation, and unit tests to drive the design of maintainable, SOLID software services that supported scaling the number of integrations and amount of data being ingested. The reason I left SeekOut is because I want to pursue research.
 
-<!-- # Selected Industry Experience
+## Software Engineer at Independent Project
 
-**Software Engineer**, SeekOut – Bellevue, WA (2022–2024)  
-Built and optimized data pipelines and distributed systems in C# and Azure, applying object-oriented design, SOLID principles, and automated testing to improve scalability, reliability, and maintainability of large-scale ETL and search infrastructure.
+*150 word limit*
 
-**Software Engineer**, Independent Project – Seattle, WA (2017–2020)  
-Designed a fault-tolerant, microservices-based web application using Java, Spring Boot, Node.js, and AWS, implementing distributed systems principles for scalable cloud deployment.
+![Technology Stack](assets/images/stack.png)
 
-**Software Engineer**, StackBrew – Redmond, WA (2015–2017)  
-Developed a JavaScript AST interpreter and backend microservices (Node.js, Go) deployed on GCP, exploring collaborative editing algorithms (OT and CRDTs) to inform distributed software design. -->
+My goal for this independent project was to build a scalable image sharing platform. Inspired by my background working at a micro-startup, and cloud computing, I studied and implemented micro-services with the Java Spring framework, Docker containerization, and Kubernetes orchestration. I pursued infrastructure as a service (IaaS) available through AWS, with provisioning automation using HashiCorp Terraform and configuration management using Ansible, creating a reproducible environment for my micro-services application. On top of this environment but outside my Kubernetes cluster I used a MongoDB database. As BLOB storage I used AWS S3. In addition to this backend system, I learned and built a simple React.js frontend with create, read, update, delete (CRUD) functionality where clients could access their images through a web browser. This frontend was released as Node.js web servers, containerized by Docker, and hosted in my Kubernetes cluster. In the end, this project was not sustainable on its own.
+
+## Software Engineer at StackBrew
+
+<a href="https://www.stackbrew.com/" target="_blank" rel="noopener noreferrer">StackBrew</a> was a micro-startup building a platform for automated development, staging, and production environments of software engineering in the cloud. The company was between 3-5 software engineers while I was employed. I owned several micro-services. Firstly, I built an abstract syntax tree (AST) interpreter for JavaScript to display variable contents as tooltips when hovering over variables in the online editor for the purpose of development/debugging, originally written in Node.js and later C++ using Node.js addons for performance advantages. Secondly, I created a git micro-service responsible for version control in the online editor, and kickoff of the automated CI/CD pipeline. Thirdly, I was responsible for a micro-service that offered collaborative editing in the online editor based on conflict-free replicated data types (CRDTs) for consistency between concurrent edits. Primary technologies were Node.js and Go micro-services, MongoDB database, Docker containerization, Kubernetes orchestration, and GCP deployment.
+
+<!-- **Software Engineer**, Independent Project – Seattle, WA (2017–2020)  
+Designed a fault-tolerant, microservices-based web application using Java, Spring Boot, Node.js, and AWS, implementing distributed systems principles for scalable cloud deployment. -->
 
 <!-- # Conference Posters
 
