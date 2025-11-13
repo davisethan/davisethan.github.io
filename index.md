@@ -25,9 +25,6 @@ I am pursuing a PhD in computer science to research Bayesian and sequence machin
   - [Software Engineer at SeekOut](#software-engineer-at-seekout)
   - [Software Engineer at Independent Project](#software-engineer-at-independent-project)
   - [Software Engineer at StackBrew](#software-engineer-at-stackbrew)
-- [Certifications and Training](#certifications-and-training)
-  - [PUMPS+AI ACM](#pumpsai-acm)
-  - [System Design](#system-design)
 
 # Research Experience
 
@@ -181,17 +178,3 @@ My goal for this independent project was to build a scalable image sharing platf
 *150 word limit*
 
 <a href="https://www.stackbrew.com/" target="_blank" rel="noopener noreferrer">StackBrew</a> was a micro-startup building a platform for automated development, staging, and production environments of software engineering in the cloud. The company was between 3-5 software engineers while I was employed. I owned several micro-services. Firstly, I built an abstract syntax tree (AST) interpreter for JavaScript to display variable contents as tooltips when hovering over variables in the online editor for the purpose of development/debugging, originally written in Node.js and later C++ using Node.js addons for performance advantages. Secondly, I created a git micro-service responsible for version control in the online editor, and kickoff of the automated CI/CD pipeline. Thirdly, I was responsible for a micro-service that offered collaborative editing in the online editor based on conflict-free replicated data types (CRDTs) for consistency between concurrent edits. Primary technologies were Node.js and Go micro-services, MongoDB database, Docker containerization, Kubernetes orchestration, and GCP deployment.
-
-# Certifications and Training
-
-## PUMPS+AI ACM
-
-*150 word limit*
-
-My <a href="assets/files/pumps_certification.pdf" target="_blank" rel="noopener noreferrer">Statement of Accomplishment</a> was earned by attending lectures and completing workshops in Nvidia CUDA at <a href="https://pumps.bsc.es/" target="_blank" rel="noopener noreferrer">PUMP+AI 2025</a>. Central topics of focus were high arithmetic intensity performance GPU implementation of multi-head attention transformers, matrix multiplication, dynamic programming and the Smith-Waterman algorithm, multi-node stencils, and heterogeneous platforms. Other topics included implementation of convolutional neural networks (CNNs), sparse graph traversal, and graph mining. Prerequisites for attendance was experience with C/C++, Java, CUDA, OpenMP, and MPI. My background with the distributed frameworks Hadoop MapReduce and Apache Spark was a plus. At this conference I also presented a <a href="assets/files/pumps_poster.pdf" target="_blank" rel="noopener noreferrer">poster</a> of preliminary research and experiment design for my MS thesis. Attending this conference let me explore the angles and depth at which I wanted HPC programming to be a focus of my MS research.
-
-## System Design
-
-*150 word limit*
-
-As a software engineer I studied and earned certifications in distributed systems design: verify certifications <a href="https://www.educative.io/verify-certificate/1j8yMXCLZZP9EAxJncyv2BjoOn9Xsp" target="_blank" rel="noopener noreferrer">one</a>, <a href="https://www.educative.io/verify-certificate/j2l3BzfGxmqPLvK7rFj0XPoOxzm7hA" target="_blank" rel="noopener noreferrer">two</a>, and <a href="https://www.educative.io/verify-certificate/ovykgD5jjxrh8vK8og5ZWBSW4QZYj7BX6Tq" target="_blank" rel="noopener noreferrer">three</a>. Knowledge of system design is critical for designing and building applications with cloud computing services. I used what I learned about system design everyday as a software engineer to create large-scale, fault-tolerant applications in the cloud. Certifications two and three cover how to design distributed cloud services like load balancers, pub-sub, and sharded counters, and software as a service (SaaS) applications such as YouTube, Google Maps, and LinkedIn. Certification one provides textbook-style lessons based on academic literature of how real-world cloud services have been architected, like Google File System (GFS), Google BigTable, Amazon DynamoDB, and consensus algorithms Paxos and Raft.
