@@ -118,15 +118,15 @@ Triangle counting is used to analyze graphs such as social networks where a dens
 
 ### Additional Research References
 
-1. Davis, E. (2025, October 6). Exploration-Exploitation-Evaluation (EEE): a framework for metaheuristic algorithms in combinatorial optimization. arXiv.org. <a href="https://arxiv.org/abs/2510.05027" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2510.05027</a>
+1. Davis, E. (2025, October 6). Exploration-Exploitation-Evaluation (EEE): a framework for metaheuristic algorithms in combinatorial optimization. arXiv.org. <a href="https://doi.org/10.48550/arXiv.2510.05027" target="_blank" rel="noopener noreferrer">https://doi.org/10.48550/arXiv.2510.05027</a>
 2. Ethan Davis. (2025). davisethan/aco: Badge release (v1.0.2). Zenodo. <a href="https://doi.org/10.5281/zenodo.17274214" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17274214</a>
 3. Tsai, C., & Chiang, M. (2023). Handbook of Metaheuristic Algorithms: From Fundamental Theories to Advanced Applications. Elsevier.
 4. Hwu, W. W., Kirk, D. B., & Hajj, I. E., PhD. (2022). Programming massively parallel processors: A Hands-on Approach. Morgan Kaufmann.
-5. Davis, E. (2025a). High performance matrix multiplication. arXiv (Cornell University). <a href="https://doi.org/10.48550/arxiv.2509.04594" target="_blank" rel="noopener noreferrer">https://doi.org/10.48550/arxiv.2509.04594</a>
+5. Davis, E. (2025a). High performance matrix multiplication. arXiv (Cornell University). <a href="https://doi.org/10.48550/arXiv.2509.04594" target="_blank" rel="noopener noreferrer">https://doi.org/10.48550/arXiv.2509.04594</a>
 6. Ethan Davis. (2025). davisethan/gemm: DOI release (v1.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.17299758" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17299758</a>
 7. Deisenroth, M. P., Faisal, A. A., & Ong, C. S. (2020). Mathematics for machine learning. Cambridge University Press.
 8. Strang, G. (2016). Introduction to linear algebra. Wellesley-Cambridge Press.
-9. Davis, E. (2025). Linear Algebra for Image Compression. Zenodo. <a href="" target="_blank" rel="noopener noreferrer">https://medium.com/@davisethan/spark-cluster-in-aws-ec2-8cd3e0992d99</a>
+9. Davis, E. (2025). Linear Algebra for Image Compression. Zenodo. <a href="https://doi.org/10.5281/zenodo.17180358" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17180358</a>
 10. Ethan Davis. (2025). davisethan/eigenface: DOI release (v1.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.17299529" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17299529</a>
 11. Davis, E. (2025). Data Structures and Algorithms. Zenodo. <a href="https://doi.org/10.5281/zenodo.17297422" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17297422</a>
 12. Ethan Davis. (2025). davisethan/data_structures_algorithms: DOI release (v1.0.2). Zenodo. <a href="https://doi.org/10.5281/zenodo.17289626" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17289626</a>
