@@ -1,0 +1,12 @@
+{
+  "name": "davisethan-github-io",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "spell": "make spell",
+    "spell:words": "make spell-words"
+  },
+  "devDependencies": {
+    "cspell": "8.19.4"
+  }
+}

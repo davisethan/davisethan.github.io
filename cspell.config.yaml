@@ -1,0 +1,93 @@
+version: "0.2"
+language: en-US
+
+files:
+  - "**/*.md"
+
+ignorePaths:
+  - _site/**
+  - node_modules/**
+  - assets/**
+  - docs/**
+
+dictionaries:
+  - softwareTerms
+  - companies
+
+# Ignore bare URLs and markdown link targets
+ignoreRegExpList:
+  - "https?://[^\\s)\"']+"
+  - "\\]\\(#?[^)]*\\)"
+
+words:
+  # --- Machine learning and statistics ---
+  - backpropagation
+  - convolutional
+  - eigenface
+  - ELBO
+  - frequentist
+  - generalizability
+  - metaheuristic
+  - metaheuristics
+  - Multimodal
+  - Riemannian
+  - Sobol
+  - tailedness
+
+  # --- Neuroscience and BCI ---
+  - biosignals
+  - neurorehabilitation
+  - DCNN
+  - SCNN
+  - MOABB
+
+  # --- Computing and hardware ---
+  - BLAS
+  - CuBLAS
+  - CUDA
+
+  # --- Cited authors and publishers ---
+  - Aristimunha
+  - Bronstein
+  - Bruna
+  - Brunton
+  - Carlsson
+  - Chevallier
+  - Chiang
+  - Deisenroth
+  - Duda
+  - Elsevier
+  - Guetschel
+  - Johansson
+  - Kaufmann
+  - Khazem
+  - Kutz
+  - Lotte
+  - Nijholt
+  - Pennec
+  - Prandoni
+  - Savoir
+  - Sedlar
+  - Shalev
+  - Shwartz
+  - Sommer
+  - Strang
+  - Tsai
+  - Vejdemo
+  - Veličković
+  - Velut
+  - Vetterli
+  - Wolpaw
+  - Zenodo
+
+  # --- This project ---
+  - davisethan
+  - Cayman
+  - gemspec
+  - cibuild
+  - probot
+  - behaviorbot
+  - rubocop
+  - toptal
+  - cspell
+  - proofer
