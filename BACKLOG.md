@@ -131,7 +131,7 @@ they fall into two different tiers, and only two of them are deletions.
       DOIs already there.
       _Done when:_ the poster has a DOI and `index.md` cites it.
 
-- [ ] **Delete `pumps_certification.pdf` (868 KB) and `osu_deans_list.pdf` (1.5 MB).**
+- [x] **Delete `pumps_certification.pdf` (868 KB) and `osu_deans_list.pdf` (1.5 MB).**
       Credentials belong on the CV as line items, not published as scans — the reader already
       trusts the claim, so hosting the scan reads as padding. Neither is referenced anywhere,
       and the dean's list link was removed deliberately in commit `73fea61`
