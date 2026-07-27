@@ -162,7 +162,7 @@ they fall into two different tiers, and only two of them are deletions.
 
 ## Sprint 4 — Documentation
 
-- [ ] **Replace `README.md`.** It is currently the Cayman theme's documentation, complete
+- [x] **Replace `README.md`.** It is currently the Cayman theme's documentation, complete
       with the theme's CI and gem-version badges. Replace with a short README covering: what
       the site is, where it is published, how to preview it locally, and a credit line for
       the Cayman theme (CC0, `pages-themes/cayman`).
@@ -179,20 +179,20 @@ they fall into two different tiers, and only two of them are deletions.
 Deferred because these carry real risk of changing how the site renders. Do not attempt
 without running the site locally and comparing before/after.
 
-- [ ] **Consider deleting `_sass/`.** `_config.yml` sets `theme: jekyll-theme-cayman`, which
+- [x] **Consider deleting `_sass/`.** `_config.yml` sets `theme: jekyll-theme-cayman`, which
       GitHub Pages ships as a supported theme, so `@import 'jekyll-theme-cayman'` in
       `assets/css/style.scss` would resolve to the gem's copy instead of the local one. The
       local files are unmodified since the fork, so this *should* be a no-op — but it is a
       live rendering dependency and the gem version may drift from the vendored copy.
       _Done when:_ a local build renders identically with `_sass/` removed. Revert otherwise.
 
-- [ ] **Remove dead Google Analytics plumbing.** `_config.yml` has an empty
+- [x] **Remove dead Google Analytics plumbing.** `_config.yml` has an empty
       `google_analytics:` key, and `_includes/head-custom-google-analytics.html` is included
       via `_includes/head-custom.html`. Inert today.
       _Superseded by sprint 6_ — the same deletion is step 5 there. Do it in sprint 6, not
       here, so the site is never without analytics plumbing mid-change.
 
-- [ ] **Remove `show_downloads: true` from `_config.yml`.** The customized
+- [x] **Remove `show_downloads: true` from `_config.yml`.** The customized
       `_layouts/default.html` dropped the `{% if site.show_downloads %}` block, so this
       setting has no effect. Verified as dead — no reference in `_layouts/`, `_includes/`,
       or `_sass/`.
