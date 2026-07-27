@@ -75,8 +75,11 @@ anything can be reverted independently.
 - [x] Delete `.github/workflows/ci.yaml` — ran `script/cibuild` (html-proofer + W3C
       validation of the theme). Confirmed via `gh workflow list` that it was never a
       registered workflow, so nothing was running.
-- [ ] Delete `.travis.yml` — Travis CI, dead.
-- [ ] Delete `.rubocop.yml` — there is no Ruby source in this repo.
+- [x] Delete `.travis.yml` — Travis CI, dead. Ran `script/bootstrap` then `script/cibuild`,
+      both of which sprint 2d removes.
+- [x] Delete `.rubocop.yml` — no Ruby source to lint, and already unresolvable: it did
+      `inherit_gem: rubocop-github`, which was a dev dependency of the gemspec deleted in
+      sprint 2a. Its only caller was `script/cibuild` (sprint 2d).
 
 > **Keep `.github/workflows/spellcheck.yml`.** It is not upstream scaffolding — it is the
 > spell check added for this site. See "Spell checking" below.
