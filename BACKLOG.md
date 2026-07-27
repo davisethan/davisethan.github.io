@@ -81,31 +81,42 @@ anything can be reverted independently.
       `inherit_gem: rubocop-github`, which was a dev dependency of the gemspec deleted in
       sprint 2a. Its only caller was `script/cibuild` (sprint 2d).
 
-> **Keep `.github/workflows/spellcheck.yml`.** It is not upstream scaffolding — it is the
-> spell check added for this site. See "Spell checking" below.
+> **Keep `.github/workflows/spellcheck.yml` and `.github/workflows/prose.yml`.** Neither is
+> upstream scaffolding — both were added for this site. See "Linting (in place)" below.
 
 ### 2c. Probot / bot config
 
 None of these apps are installed on this repo.
 
-- [x] Delete `.github/CODEOWNERS` — required review from `@pages-themes/maintainers`, a team
-      that does not exist here.
+- [x] Replace `.github/CODEOWNERS` — the upstream version required review from
+      `@pages-themes/maintainers`, a team that does not exist here. Rewritten to
+      `* @davisethan` in commit `15920a8` rather than deleted. **Keep it** — it is now a
+      legitimate ownership file, not fork scaffolding.
 - [x] Delete `.github/config.yml` — behaviorbot welcome/reply messages referencing the
       Cayman theme.
 - [x] Delete `.github/settings.yml` — probot/settings repo config; also declared branch
       protection requiring the `script/cibuild` status check. Verified via the GitHub API
       that `master` has no branch protection configured, so nothing depended on it.
 - [x] Delete `.github/stale.yml` and `.github/no-response.yml`.
-- [x] `.github/` now contains only `workflows/spellcheck.yml`. Directory retained.
+- [x] `.github/` now contains only `CODEOWNERS`, `workflows/spellcheck.yml`, and
+      `workflows/prose.yml`. Directory retained.
 
 ### 2d. Maintainer scripts and docs
 
-- [ ] Delete `script/` — `release` publishes the gem, `cibuild` and `validate-html` test the
-      theme, `bootstrap` installs the theme's dev dependencies. If local previews are wanted,
-      `script/server` is the only one worth preserving, and `bundle exec jekyll serve` does
-      the same thing.
-- [ ] Delete `docs/` — `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SUPPORT.md` all describe
+- [x] Delete `script/` — all five were theme-maintainer tooling. `release` published the gem
+      and tagged versions, `cibuild` ran the theme test suite, `validate-html` needed
+      `w3c_validators` (a dev dependency of the gemspec deleted in 2a), `bootstrap` was
+      `gem install bundler; bundle install`, and `server` was the single line
+      `bundle exec jekyll serve` — no reason to keep a script for that.
+- [x] Delete `docs/` — `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SUPPORT.md` all described
       contributing to the Cayman theme project.
+- [x] Removed the now-stale `docs/**` entries from `cspell.config.yaml` `ignorePaths` and
+      from `.textlintignore`.
+
+> **Clears every dangling reference from 2a and 2b.** `script/cibuild` was the only caller of
+> `.rubocop.yml`, and `script/{cibuild,release}` the only callers of the deleted gemspec.
+> The one remaining broken link is `README.md:102` → `docs/CONTRIBUTING.md`, which sprint 4
+> resolves by rewriting that file.
 
 ---
 
@@ -168,9 +179,11 @@ without running the site locally and comparing before/after.
       setting has no effect. Verified as dead — no reference in `_layouts/`, `_includes/`,
       or `_sass/`.
 
-- [ ] **Trim `.gitignore`.** It is a generic toptal template covering Emacs, Sass, Jekyll,
-      and macOS. Mostly noise, but harmless — low priority. Keep the `_site/` and
-      `Gemfile.lock` entries.
+- [x] **Trim `.gitignore`.** Regenerated from
+      `toptal.com/developers/gitignore/api/macos,visualstudiocode,jekyll,node,sass` —
+      dropped Emacs, added Visual Studio Code and Node. `node_modules/` is ignored and
+      `package-lock.json` is not, both verified. `Gemfile.lock` was re-added manually in
+      sprint 2a, since no toptal template carries it.
 
 - [ ] **Consider splitting `index.md`.** At ~24 KB it holds the entire site in one page with
       a hand-maintained table of contents and six reference sections. Splitting into
@@ -246,50 +259,64 @@ cookie-free and privacy-first; the paid ones offer more depth than Cloudflare.
 
 ---
 
-## Spell checking (in place)
+## Linting (in place)
 
 Added, not a todo. Recorded here so it is not mistaken for fork scaffolding.
 
 - `Makefile` — the commands. Single source of truth; everything else calls into it.
-- `package.json` / `package-lock.json` — pins the cspell version exactly and locks its
-  dependency tree. npm exists in this repo *only* for the spell checker; the site itself is
-  still plain Jekyll and needs no build step.
-- `.github/workflows/spellcheck.yml` — runs `npm ci` then `make spell` on every PR to
-  `master` and on direct pushes to `master`. Fails the build on an unknown word. It calls
-  the Makefile rather than repeating the command, so CI and local runs cannot drift.
-- `cspell.config.yaml` — dictionary and scope. Editors with the cSpell extension read the
-  same file, so in-editor squiggles match CI.
-- `.gitignore` — `node_modules/` added. `package-lock.json` is committed deliberately;
+- `package.json` / `package-lock.json` — pins `cspell`, `textlint`, and
+  `textlint-rule-terminology` to exact versions and locks the dependency tree. npm exists in
+  this repo *only* for these linters; the site itself is still plain Jekyll and needs no
+  build step.
+- `.github/workflows/spellcheck.yml` — runs `npm ci` then `make spell`.
+- `.github/workflows/prose.yml` — runs `npm ci` then `make prose`.
+  Both trigger on PRs to `master` and on direct pushes to `master`, and both call the
+  Makefile rather than repeating the command, so CI and local runs cannot drift.
+- `cspell.config.yaml` — spelling dictionary and scope. Editors with the cSpell extension
+  read the same file, so in-editor squiggles match CI.
+- `.textlintrc.yml` — terminology rule config. `exclude` needs the rule's **regular expression patterns**
+  (`"readme(s)?"`, `"repo\\b"`), not plain words; passing words silently does nothing.
+- `.textlintignore` — textlint does not read `.gitignore`, so exclusions are listed here
+  separately. Patterns need glob form (`_site/**`), not directory form (`_site/`).
+- `.gitignore` — `node_modules/` ignored. `package-lock.json` is committed deliberately;
   `setup-node`'s npm cache and `npm ci` both require it.
 
-Scope is `**/*.md`, which today means `index.md`, `README.md`, and `BACKLOG.md`.
-`docs/`, `assets/`, and `_site/` are excluded.
+Scope for both is `**/*.md`, which today means `index.md`, `README.md`, and `BACKLOG.md`.
 
-**When CI flags a word:** if it is a real misspelling, fix the prose. If it is a valid term
-(an author surname, an acronym, a method name), add it to the `words:` list in
+**When the spell check flags a word:** if it is a real misspelling, fix the prose. If it is
+a valid term (an author surname, an acronym, a method name), add it to the `words:` list in
 `cspell.config.yaml` under the matching comment group. Do not silence a real error by
 whitelisting it.
 
+**When the prose check flags a term:** `make prose-fix` auto-applies every terminology fix.
+Review the diff before committing — it edits published prose.
+
     make               # list available targets
-    make spell         # check (exactly what CI runs)
+    make lint          # spell + prose, both CI checks
+    make spell         # spelling only
     make spell-words   # list unknown words to triage
     make spell-version # print the installed cspell version
+    make prose         # terminology only
+    make prose-fix     # auto-apply terminology fixes
     make install       # install tooling from the lockfile
     make clean         # remove node_modules
 
-`make spell` installs the tooling automatically if `node_modules/` is missing or the
-lockfile is newer, so a fresh clone needs no setup step. `npm run spell` also works — the
-npm scripts delegate to `make` rather than duplicating the command.
+Targets install the tooling automatically if `node_modules/` is missing or the lockfile is
+newer, so a fresh clone needs no setup step. `npm run lint`, `npm run spell`, and
+`npm run prose` also work — the npm scripts delegate to `make` rather than duplicating the
+commands.
 
-The cspell version is pinned exactly (no caret) in `package.json` because dictionary
-changes in a new release can fail a build that has no content changes. To bump it:
+Versions are pinned exactly (no caret) in `package.json` because dictionary or rule changes
+in a new release can fail a build that has no content changes. To bump one:
 
     npm install --save-exact cspell@<version>   # then commit both package files
 
 ### Follow-ups
 
+- [ ] **`make help` prints nothing.** It greps for `## ` doc comments that were later removed
+      from the `Makefile`. Either restore the comments or replace `help` with a static list.
 - [ ] Widen scope to `_layouts/*.html` and `_includes/*.html` if prose starts living there.
       Skipped for now — those are near-unmodified theme files and mostly markup.
-- [ ] Consider adding a link checker alongside this, which would have caught the broken
-      `index.md:138` anchors in sprint 1 that a spell checker cannot see.
-- [ ] Mention the spell check in the new `README.md` when sprint 4 rewrites it.
+- [ ] Consider adding a link checker. Neither linter can see a broken anchor; sprint 1's
+      were found by a one-off script, which is not repeatable protection.
+- [ ] Mention the linters in the new `README.md` when sprint 4 rewrites it.

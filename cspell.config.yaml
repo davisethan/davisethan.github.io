@@ -8,7 +8,6 @@ ignorePaths:
   - _site/**
   - node_modules/**
   - assets/**
-  - docs/**
 
 dictionaries:
   - softwareTerms
@@ -92,6 +91,9 @@ words:
   - cspell
   - proofer
   - textlint
+  - textlintignore
+  - textlintrc
+  - visualstudiocode
 
   # --- Analytics ---
   - cloudflareinsights
