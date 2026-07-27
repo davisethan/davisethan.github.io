@@ -91,3 +91,12 @@ words:
   - toptal
   - cspell
   - proofer
+  - textlint
+
+  # --- Analytics ---
+  - cloudflareinsights
+  - blocklists
+  - undercount
+  - GoatCounter
+  - Plausible
+  - Fathom
