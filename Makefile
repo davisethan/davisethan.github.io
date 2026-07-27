@@ -1,9 +1,10 @@
 CSPELL := npx cspell
+TEXTLINT := npx textlint
 
 CONTENT := **/*.md
 
 .DEFAULT_GOAL := help
-.PHONY: help spell spell-words spell-version install clean
+.PHONY: help spell spell-words spell-version prose prose-fix lint install clean
 
 help:
 	@grep -hE '^[a-zA-Z_-]+:.*## ' $(MAKEFILE_LIST) \
@@ -17,6 +18,14 @@ spell-words: node_modules
 
 spell-version: node_modules
 	@$(CSPELL) --version
+
+prose: node_modules
+	$(TEXTLINT) -f stylish "$(CONTENT)"
+
+prose-fix: node_modules
+	$(TEXTLINT) --fix "$(CONTENT)"
+
+lint: spell prose
 
 install: node_modules
 
