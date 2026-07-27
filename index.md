@@ -105,6 +105,8 @@ Metaheuristic algorithms such as evolutionary learning are modern techniques for
 
 High performance matrix multiplication is the backbone of modern deep learning [[4]](#additional-research-references). I built high performance general matrix multiplication (GEMM) in Nvidia CUDA, and CPU analogs using OpenMP and C++ Threads [[6]](#additional-research-references). I benchmarked these programs against third party libraries CuBLAS and BLAS. Formal statistical analysis shows that for large square matrix sizes these five algorithms have distinct ranks of performance measured in terms of floating point operations per second (FLOPS) [[5]](#additional-research-references).
 
+I presented a poster on Bayesian deep learning for MI-EEG signal recognition at the PUMPS+AI summer school hosted by the Barcelona Supercomputing Center [[14]](#additional-research-references).
+
 ![Olivetti Faces](assets/images/olivetti_faces.png)
 
 Linear algebra is the foundation of ML pillars that include principal component analysis (PCA) for dimensionality reduction [[7]](#additional-research-references). I wrote proofs of correctness for numerical linear algebra eigenvalue decomposition (EVD) and singular value decomposition (SVD) algorithms, the QR method and the power method with deflation [[8, 9]](#additional-research-references). I went on to implement these numerical algorithms in C, requiring specialized loop fusion to prevent numerical underflow [[10]](#additional-research-references).
@@ -128,6 +130,7 @@ Triangle counting is used to analyze graphs such as social networks where a dens
 11. Davis, E. (2025). Data Structures and Algorithms. Zenodo. <a href="https://doi.org/10.5281/zenodo.17297422" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17297422</a>
 12. Ethan Davis. (2025). davisethan/data_structures_algorithms: DOI release (v1.0.2). Zenodo. <a href="https://doi.org/10.5281/zenodo.17289626" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17289626</a>
 13. Ethan Davis. (2025). davisethan/triangle_counting: DOI release (v1.0.1). Zenodo. <a href="https://doi.org/10.5281/zenodo.17299086" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.17299086</a>
+14. Davis, E. (2025). Bayesian Deep Learning for Electroencephalogram Signal Recognition. Zenodo. <a href="https://doi.org/10.5281/zenodo.21631478" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.21631478</a>
 
 # Teaching and Mentoring
 

@@ -122,23 +122,41 @@ None of these apps are installed on this repo.
 
 ## Sprint 3 — Asset cleanup
 
-- [ ] **Delete three unreferenced PDFs from `assets/files/`** (~3.7 MB, roughly 95% of that
-      directory and the bulk of the repo):
-      - `osu_deans_list.pdf` (1.5 MB) — link removed in commit `73fea61`
-        ("Removed description of awards & honors")
-      - `pumps_certification.pdf` (868 KB) — no reference found in any tracked file
-      - `pumps_poster.pdf` (1.3 MB) — no reference found in any tracked file
+Applies the asset hosting policy below. The three unreferenced PDFs are not one decision —
+they fall into two different tiers, and only two of them are deletions.
 
-      Only `Ethan_Davis_CV_2025.pdf` (132 KB) and `Ethan_Davis_Resume_2025.pdf` (84 KB) are
-      linked, from `index.md:8`.
-      _Decide first:_ whether these should instead be *re-linked* from a certifications /
-      awards section. They were clearly intentional uploads at one point.
+- [x] **Deposit `pumps_poster.pdf` (1.3 MB) on Zenodo, then remove it from the repo.**
+      A poster is citable scholarly output and a standard Zenodo deposit type, so it earns a
+      DOI rather than a repo link. Cite it in Additional Research alongside the six Zenodo
+      DOIs already there.
+      _Done when:_ the poster has a DOI and `index.md` cites it.
+
+- [ ] **Delete `pumps_certification.pdf` (868 KB) and `osu_deans_list.pdf` (1.5 MB).**
+      Credentials belong on the CV as line items, not published as scans — the reader already
+      trusts the claim, so hosting the scan reads as padding. Neither is referenced anywhere,
+      and the dean's list link was removed deliberately in commit `73fea61`
+      ("Removed description of awards & honors").
+      _Check first:_ that the CV lists both, so nothing is actually lost.
+      _Also:_ certificate scans often carry student ID numbers, signatures, or addresses.
+      Worth a look before they stay published anywhere at all.
+
+- [ ] **Keep `Ethan_Davis_CV_2025.pdf` and `Ethan_Davis_Resume_2025.pdf` in the repo.**
+      Not a deletion — recorded so they are not swept up with the rest. Both are load-bearing
+      (linked from `index.md:8`), must stay current, and are cheap: 132 KB over 6 revisions
+      has cost 767 KB of history, 84 KB over 3 revisions has cost 243 KB.
 
 - [ ] **Delete `thumbnail.png`** — referenced only by the upstream Cayman README.
       _Blocked by:_ Sprint 4's README rewrite.
 
 - [ ] Confirm `assets/images/favicon.png` stays — it is referenced from
       `_layouts/default.html` and is easy to sweep up by mistake.
+
+> **This does not shrink the repository.** Git keeps deleted files in history, so every clone
+> still pulls all 3.7 MB. `.git` is 7.6 MB today, roughly half of it files that will no longer
+> ship. Sprint 3 cleans the working tree and the published site, not the clone size.
+> Reclaiming that space needs `git filter-repo`, which rewrites every commit hash and forces a
+> push — hard to justify for 3.7 MB. The lesson is preventive, which is what the policy below
+> is for.
 
 ---
 
@@ -256,6 +274,50 @@ fingerprint by IP or user agent.
 
 GoatCounter (free for non-commercial), Plausible (~$9/mo), Fathom (~$15/mo). All are
 cookie-free and privacy-first; the paid ones offer more depth than Cloudflare.
+
+---
+
+## Asset hosting policy
+
+Standing rule, not a todo. Where a file belongs, decided by three questions in order.
+Written down so the thesis-asset sprint does not have to re-derive it.
+
+**1. Would anyone ever cite it?** → External archive, linked by DOI.
+Thesis, papers, posters, datasets, code releases. Not a size question — a 200 KB poster still
+belongs on Zenodo, because a DOI is worth more than a repo link. This is already the
+established practice here: `index.md` cites six Zenodo DOIs and two arXiv preprints.
+
+**2. Is it load-bearing for the site?** → In the repo.
+The CV, the resume, and any figure embedded in `index.md`. Two reasons beyond size: they must
+always be current, and the file a recruiter clicks should not depend on a third-party host
+being reachable. In-repo files are served from GitHub's CDN alongside the page.
+Budget: **size × expected lifetime revisions, up to about 5 MB per asset.** The CV passes
+easily — roughly 3 MB over a five-year PhD at four revisions a year. A 25 MB thesis at three
+revisions costs 75 MB and fails by 15x. Frequency only matters multiplied by bulk.
+
+**3. Neither?** → Do not host it.
+Certificates, transcripts, award letters. State them on the CV; that is the convention, and
+the scan adds nothing the reader was doubting.
+
+### Constraints that rule out the obvious alternatives
+
+- **Git LFS does not work with GitHub Pages.** Pages does not resolve LFS pointers, so
+  visitors would download the pointer text file instead of the PDF. This removes the usual
+  answer for large binaries.
+- **Pages limits are not the binding constraint.** 1 GB recommended repository size, 100 GB
+  per month soft bandwidth, and GitHub blocks regular non-LFS files over 100 MB. A single
+  25 MB PDF clears all three. The real cost is Git history: binaries do not delta-compress,
+  so every revision is stored close to in full, forever, in every clone.
+- **Not Google Drive.** No DOI, a virus-scan warning page on large files, links that rot when
+  the folder is reorganized, and it looks out of place beside arXiv and Zenodo DOIs.
+
+### Thesis assets (future sprint)
+
+- [ ] Deposit the thesis PDF (~20–25 MB) on Zenodo, and check whether UW ResearchWorks
+      deposit is required — it likely is, and gives a second permanent URL at no extra effort.
+      Link from `index.md` by DOI. **Never commit the PDF.**
+- [ ] Figures pulled out of the thesis for the page stay in the repo, sized for web, under the
+      same per-asset budget.
 
 ---
 
