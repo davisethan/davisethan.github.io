@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "spell": "make spell",
-    "spell:words": "make spell-words"
+    "spell:words": "make spell-words",
+    "prose": "make prose",
+    "prose:fix": "make prose-fix",
+    "lint": "make lint"
   },
   "devDependencies": {
-    "cspell": "8.19.4"
+    "cspell": "8.19.4",
+    "textlint": "15.7.1",
+    "textlint-rule-terminology": "5.2.16"
   }
 }
