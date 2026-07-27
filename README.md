@@ -42,7 +42,7 @@ show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a d
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
-### Stylesheet
+### Style sheet
 
 If you'd like to add your own custom styles:
 
@@ -56,7 +56,7 @@ If you'd like to add your own custom styles:
     ```
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your style sheet.*
 
 ### Layouts
 
@@ -95,7 +95,7 @@ See the [open issues](https://github.com/pages-themes/cayman/issues) for a list 
 
 ## Project philosophy
 
-The Cayman theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+The Cayman theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) site. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
 ## Contributing
 

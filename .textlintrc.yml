@@ -1,0 +1,6 @@
+rules:
+  terminology:
+    defaultTerms: true
+    exclude:
+      - "readme(s)?"
+      - "repo\\b"
