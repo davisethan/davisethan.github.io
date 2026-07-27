@@ -53,11 +53,20 @@ anything can be reverted independently.
 
 ### 2a. Gem packaging
 
-- [ ] Delete `jekyll-theme-cayman.gemspec` — packages Cayman as a RubyGem; not applicable.
-- [ ] Delete or rewrite `Gemfile` — it is just `gemspec`, so it breaks once the gemspec is
-      gone. Delete it (GitHub Pages builds fine without one), or replace the contents with
-      `gem "github-pages", group: :jekyll_plugins` if local previews are wanted.
-      _Blocked by:_ the gemspec deletion above — do both in the same commit.
+- [x] Delete `jekyll-theme-cayman.gemspec` — packaged Cayman as a RubyGem; not applicable.
+- [x] Rewrite `Gemfile` — was just `gemspec`, which breaks once the gemspec is gone. Now
+      `gem "github-pages", group: :jekyll_plugins`, kept rather than deleted because
+      sprint 5's `_sass/` item cannot be verified without a local build.
+      Confirmed via the API that Pages `build_type` is `legacy`, meaning GitHub builds with
+      its own pinned gem set and ignores this file — so it affects local previews only and
+      cannot change the deployed site.
+- [x] Added `Gemfile.lock` to `.gitignore`. The regenerated `.gitignore` dropped it (no
+      toptal template carries it), and `bundle install` would otherwise leave it untracked.
+
+> **Leaves two dangling references until sprint 2d.** `script/release` and `script/cibuild`
+> both run `gem build jekyll-theme-cayman.gemspec` against the now-deleted file. Both are
+> dead theme-maintainer scripts that 2d removes; nothing runs them today (no workflow
+> invokes them, and the CI that did was deleted in 2b).
 
 ### 2b. CI and lint config
 
