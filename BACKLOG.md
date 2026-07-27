@@ -140,15 +140,15 @@ they fall into two different tiers, and only two of them are deletions.
       _Also:_ certificate scans often carry student ID numbers, signatures, or addresses.
       Worth a look before they stay published anywhere at all.
 
-- [ ] **Keep `Ethan_Davis_CV_2025.pdf` and `Ethan_Davis_Resume_2025.pdf` in the repo.**
+- [x] **Keep `Ethan_Davis_CV_2025.pdf` and `Ethan_Davis_Resume_2025.pdf` in the repo.**
       Not a deletion — recorded so they are not swept up with the rest. Both are load-bearing
       (linked from `index.md:8`), must stay current, and are cheap: 132 KB over 6 revisions
       has cost 767 KB of history, 84 KB over 3 revisions has cost 243 KB.
 
-- [ ] **Delete `thumbnail.png`** — referenced only by the upstream Cayman README.
+- [x] **Delete `thumbnail.png`** — referenced only by the upstream Cayman README.
       _Blocked by:_ Sprint 4's README rewrite.
 
-- [ ] Confirm `assets/images/favicon.png` stays — it is referenced from
+- [x] Confirm `assets/images/favicon.png` stays — it is referenced from
       `_layouts/default.html` and is easy to sweep up by mistake.
 
 > **This does not shrink the repository.** Git keeps deleted files in history, so every clone
