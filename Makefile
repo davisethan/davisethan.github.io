@@ -3,8 +3,17 @@ TEXTLINT := npx textlint
 
 CONTENT := **/*.md
 
+# Local preview runs in a container so no Ruby is installed on the host.
+# ruby:3.3 matches the Ruby that GitHub Pages builds with.
+DOCKER := docker
+RUBY_IMAGE := ruby:3.3
+GEM_VOLUME := davisethan-gems
+PORT := 4000
+# Interactive by default; override with `make serve TTY=` where there is no terminal.
+TTY := -it
+
 .DEFAULT_GOAL := help
-.PHONY: help spell spell-words spell-version prose prose-fix lint install clean
+.PHONY: help spell spell-words spell-version prose prose-fix lint install clean serve
 
 help:
 	@grep -hE '^[a-zA-Z_-]+:.*## ' $(MAKEFILE_LIST) \
@@ -26,6 +35,17 @@ prose-fix: node_modules
 	$(TEXTLINT) --fix "$(CONTENT)"
 
 lint: spell prose
+
+serve:
+	@$(DOCKER) info >/dev/null 2>&1 \
+		|| { echo "Docker is not running. Start Docker Desktop, then retry."; exit 1; }
+	@echo "Serving on http://localhost:$(PORT) — first run installs gems, which takes a few minutes."
+	$(DOCKER) run --rm $(TTY) \
+		-v "$(CURDIR)":/site -w /site \
+		-v $(GEM_VOLUME):/usr/local/bundle \
+		-p $(PORT):4000 \
+		$(RUBY_IMAGE) \
+		bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --force_polling"
 
 install: node_modules
 
