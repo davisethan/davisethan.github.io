@@ -240,19 +240,22 @@ fingerprint by IP or user agent.
 
 ### Steps
 
-- [ ] **1. Create a free Cloudflare account.** No paid plan needed.
+- [x] **1. Create a free Cloudflare account.** No paid plan needed.
 
-- [ ] **2. Add the site.** Web Analytics → *Add a site* → hostname `davisethan.github.io`.
+- [x] **2. Add the site.** Web Analytics → *Add a site* → hostname `davisethan.github.io`.
       Use the **non-proxied** path. No DNS change and no proxying through Cloudflare is
       required — that is the whole reason this works on GitHub Pages.
 
-- [ ] **3. Copy the JS snippet** from *Manage site*. It is a one-line `<script defer>` tag
-      pointing at `static.cloudflareinsights.com/beacon.min.js` with a `data-cf-beacon`
+- [x] **3. Copy the JS snippet** from *Manage site*. Cloudflare now ships a
+      `<script type="module">` tag, not `<script defer>` — modules defer by default.
+      It points at `static.cloudflareinsights.com/beacon.min.js` with a `data-cf-beacon`
       attribute containing a site-specific token. Copy it verbatim from the dashboard rather
       than reconstructing it — the token is generated per site.
       The token is **not a secret** (it ships in public page source), so committing it is fine.
+      _Reformatted for readability, but the single quotes on `data-cf-beacon` are load-bearing:_
+      the attribute value is JSON containing double quotes, so the outer pair must be single.
 
-- [ ] **4. Add the snippet to `_layouts/default.html`, immediately before `</body>`**
+- [x] **4. Add the snippet to `_layouts/default.html`, immediately before `</body>`**
       (currently line 43). Cloudflare's docs specify before the closing body tag, not in
       `<head>`. The layout override is now the only place it can go — `_includes/`, the
       theme's usual customization hook, was deleted in sprint 5.
@@ -265,6 +268,10 @@ fingerprint by IP or user agent.
       request to `static.cloudflareinsights.com`. Then confirm the visit appears in the
       Cloudflare dashboard — allow a few minutes for first data.
       _Done when:_ a real page view shows in the dashboard.
+      **This step cannot be done with `make serve`.** Cloudflare validates the beacon
+      hostname by postfix match against the registered site, so hits from `localhost:4000`
+      are discarded. A local build only confirms the tag renders and the script is fetched;
+      the dashboard confirmation requires the deployed site.
 
 ### Notes
 
