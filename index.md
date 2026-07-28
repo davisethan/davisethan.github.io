@@ -34,15 +34,11 @@ I am pursuing a PhD in computer science to research Bayesian and sequence machin
 
 The goal of my MS thesis is to evaluate when Bayesian ML benefits motor-imagery electroencephalogram (MI-EEG) brain-computer interface (BCI) classification [[3, 4]](#ms-thesis-references). Motivations for MI-EEG/BCI research include assisting neurorehabilitation therapies and controlling robotic prosthetics [[2]](#ms-thesis-references). I compare analogous frequentist and Bayesian ML models from the three most popular types of MI-EEG classifiers: firstly, linear spatial filters, or secondly, Riemannian geometric spatial filters, plus training models, and thirdly deep learning [[1]](#ms-thesis-references). Metrics used to measure predictive performance come from discrimination, calibration, and sharpness [[4]](#ms-thesis-references).
 
-![End-to-End Pipeline](assets/images/e2e_pipeline.png)
-
 My MS thesis experiment compares frequentist and Bayesian probability models. Frequentist models optimize parameters &#952; that minimize loss when predicting label y given example x. Bayesian models average over parameters &#952; making comprehensive predictions given all available information. Prior beliefs of the distribution for parameters &#952; and inference methods for approximating the often intractable evidence are additional requirements for Bayesian modeling [[3, 5]](#ms-thesis-references).
 
 The datasets are popular options for MI-EEG modeling [[1]](#ms-thesis-references). The frequentist models are top-performing classifiers of these data in terms of accuracy [[1]](#ms-thesis-references). Our contribution considers the Bayesian analogs of these models and additional metrics. The acronyms of the models are as follows: common spatial pattern (CSP), tangent space (SP), linear discriminant analysis (LDA), support vector machine (SVM), logistic regression (LR), shallow convolutional neural network (SCNN), deep convolutional neural network (DCNN), Gaussian process (GP) [[2, 7, 3, 6, 5]](#ms-thesis-references).
 
 The prior distributions range from light to heavy tailedness. Our choice of a Gaussian distribution is a standard baseline, though previous results have shown that heavy-tailed priors like the Laplace or Cauchy distributions are more expressive for training ML [[2]](#ms-thesis-references). Our experiment uses the three most common methods inference for ML: Laplace approximation, variational inference (VI), and sampling methods of which Hamiltonian Monte Carlo (HMC) is the golden standard [[3, 4]](#ms-thesis-references). These methods range from fastest and least accurate, to slowest and most accurate. Each technique has unique metrics that can be used to explain its performance, for example in terms of model improvement per computational unit: condition number of the Hessian matrix, evidence lower bound (ELBO), and effective sample size (ESS) for Laplace approximation, VI, and HMC respectively [[4, 8]](#ms-thesis-references).
-
-![Experiment Design](assets/images/experiment_design.png)
 
 The mother of all BCI benchmarks (MOABB) is a software library created for the purpose of reproducible BCI research [[1]](#ms-thesis-references). Its expert, minimal MI-EEG signal preprocessing, widely accepted methods of model selection, and rigorous statistical evaluation functions creates a standardized framework of BCI research experiment design allowing researchers to focus on designing novel ML models. The centralization of datasets offers model comparisons with statistically valid claims that some model/family empirically dominates another.
 
@@ -70,8 +66,6 @@ Representation learning and inductive bias discovery such as graph learning can 
 Transfer learning and foundation models are also impactful directions of BCI research [[4]](#future-directions-references). Statistical learning theory (SLT) such as probably approximately correct (PAC) bounds describe the theoretical generalizability of ML models [[9]](#future-directions-references). SLT can be used to describe the effectiveness of different types of BCI classifiers to model MI-EEG data. Additionally, SLT can help BCI researchers that desire MI-EEG classifiers that can quickly adapt to cross-session and cross-subject scenarios.
 
 Ensemble models based on simple strategies have some of the best performances recorded for Bayesian ML [[2]](#additional-research-references). The techniques for combining models are voting, bagging, boosting, and stacking [[1]](#additional-research-references). Multimodal and hybrid learning is also valuable for BCI research because it lets devices model multiple sources of data such as muscle activations from EMG and multiple data paradigms like electrical potentials from EEG [[2]](#additional-research-references). Together, ensemble, multimodal, and hybrid learning separate data uncertainty (aleatoric) and model uncertainty (epistemic) and reduces the latter.
-
-![Parameter Space Search](assets/images/samples.png)
 
 Model selection and hyperparameter search constrained to k-fold cross-validation grid search can have the undesirable effect of sparse coverage of the parameter space in higher dimensions. Pseudo-random sampling (Sobol, Latin hypercubes), metaheuristic and evolutionary algorithms, reinforcement learning, and comprehensive Bayesian model selection are less naive approaches to model and hyperparameter optimization [[12, 13]](#additional-research-references). Therefore, another direction of research is model selection and hyperparameter search for a given ML algorithm.
 
@@ -101,13 +95,9 @@ In the year since starting my MS I explored several directions of research. Some
 
 Metaheuristic algorithms such as evolutionary learning are modern techniques for solving challenging optimization problems such as those in discrete space where exhaustive search solutions have combinatorial complexity [[3]](#additional-research-references). Explore-Exploit-Evaluate (EEE) is a framework I used to explore ant colony optimization (ACO) benchmarks for solving the traveling salesman problem (TSP) [[1]](#additional-research-references). I implemented ACO in Java and the Hadoop MapReduce framework [[2]](#additional-research-references). My publicly available software repository has documentation I wrote for creating a distributed Hadoop MapReduce cluster of AWS EC2 instances, and is how I ran ACO to solve the TSP. This documentation is also accessible as a <a href="https://medium.com/@davisethan/hadoop-cluster-in-aws-ec2-ac982d91b1f6" target="_blank" rel="noopener noreferrer">Medium post</a>.
 
-![High Performance Matrix Multiplication](assets/images/gemm.png)
-
 High performance matrix multiplication is the backbone of modern deep learning [[4]](#additional-research-references). I built high performance general matrix multiplication (GEMM) in Nvidia CUDA, and CPU analogs using OpenMP and C++ Threads [[6]](#additional-research-references). I benchmarked these programs against third party libraries CuBLAS and BLAS. Formal statistical analysis shows that for large square matrix sizes these five algorithms have distinct ranks of performance measured in terms of floating point operations per second (FLOPS) [[5]](#additional-research-references).
 
 I presented a poster on Bayesian deep learning for MI-EEG signal recognition at the PUMPS+AI summer school hosted by the Barcelona Supercomputing Center [[14]](#additional-research-references).
-
-![Olivetti Faces](assets/images/olivetti_faces.png)
 
 Linear algebra is the foundation of ML pillars that include principal component analysis (PCA) for dimensionality reduction [[7]](#additional-research-references). I wrote proofs of correctness for numerical linear algebra eigenvalue decomposition (EVD) and singular value decomposition (SVD) algorithms, the QR method and the power method with deflation [[8, 9]](#additional-research-references). I went on to implement these numerical algorithms in C, requiring specialized loop fusion to prevent numerical underflow [[10]](#additional-research-references).
 
@@ -171,8 +161,6 @@ The Smart Neurorehabilitation Ecosystem at the University of Washington research
 ## Software Engineer at Independent Project
 
 *150 word limit*
-
-![Technology Stack](assets/images/stack.png)
 
 My goal for this independent project was to build a scalable image sharing platform. Inspired by my background working at a micro-startup, and cloud computing, I studied and implemented microservices with the Java Spring framework, Docker containerization, and Kubernetes orchestration. I pursued infrastructure as a service (IaaS) available through AWS, with provisioning automation using HashiCorp Terraform and configuration management using Ansible, creating a reproducible environment for my microservices application. On top of this environment but outside my Kubernetes cluster I used a MongoDB database. As BLOB storage I used AWS S3. In addition to this backend system, I learned and built a simple React frontend with create, read, update, delete (CRUD) functionality where clients could access their images through a web browser. This frontend was released as Node.js web servers, containerized by Docker, and hosted in my Kubernetes cluster. In the end, this project was not sustainable on its own.
 

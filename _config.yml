@@ -1,4 +1,13 @@
 title: Ethan Davis
-show_downloads: true
-google_analytics:
 theme: jekyll-theme-cayman
+exclude:
+  - BACKLOG.md
+  - README.md
+  - Makefile
+  - cspell.config.yaml
+  - package.json
+  - package-lock.json
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache

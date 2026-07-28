@@ -1,11 +1,11 @@
 # Backlog
 
-Cleanup backlog for `davisethan.github.io`. The repo is a fork of
+Cleanup backlog for `davisethan.github.io`. The repo began as a fork of
 [pages-themes/cayman](https://github.com/pages-themes/cayman); everything at or before
-commit `56aa6db` (2024-01-16) is upstream theme code. Only `index.md`,
-`_layouts/default.html`, `_config.yml`, `assets/css/style.scss`, and `assets/` have been
-modified since the fork. The rest is theme-maintainer scaffolding that does nothing for
-this site.
+commit `56aa6db` (2024-01-16) is upstream theme code. Sprints 2 through 5 removed that
+scaffolding. What is left of the theme is two customized files — `_layouts/default.html`
+and `assets/css/style.scss` — with the rest of Cayman coming from the
+`jekyll-theme-cayman` gem that GitHub Pages ships.
 
 Sprints are ordered by risk: user-visible fixes first, deletions second, judgment calls last.
 
@@ -55,18 +55,13 @@ anything can be reverted independently.
 
 - [x] Delete `jekyll-theme-cayman.gemspec` — packaged Cayman as a RubyGem; not applicable.
 - [x] Rewrite `Gemfile` — was just `gemspec`, which breaks once the gemspec is gone. Now
-      `gem "github-pages", group: :jekyll_plugins`, kept rather than deleted because
-      sprint 5's `_sass/` item cannot be verified without a local build.
+      `gem "github-pages", group: :jekyll_plugins`.
       Confirmed via the API that Pages `build_type` is `legacy`, meaning GitHub builds with
       its own pinned gem set and ignores this file — so it affects local previews only and
-      cannot change the deployed site.
+      cannot change the deployed site. It is load-bearing for those: since `_sass/` and
+      `_includes/` were deleted, the theme reaches `make serve` only through this gem.
 - [x] Added `Gemfile.lock` to `.gitignore`. The regenerated `.gitignore` dropped it (no
       toptal template carries it), and `bundle install` would otherwise leave it untracked.
-
-> **Leaves two dangling references until sprint 2d.** `script/release` and `script/cibuild`
-> both run `gem build jekyll-theme-cayman.gemspec` against the now-deleted file. Both are
-> dead theme-maintainer scripts that 2d removes; nothing runs them today (no workflow
-> invokes them, and the CI that did was deleted in 2b).
 
 ### 2b. CI and lint config
 
@@ -113,11 +108,6 @@ None of these apps are installed on this repo.
 - [x] Removed the now-stale `docs/**` entries from `cspell.config.yaml` `ignorePaths` and
       from `.textlintignore`.
 
-> **Clears every dangling reference from 2a and 2b.** `script/cibuild` was the only caller of
-> `.rubocop.yml`, and `script/{cibuild,release}` the only callers of the deleted gemspec.
-> The one remaining broken link is `README.md:102` → `docs/CONTRIBUTING.md`, which sprint 4
-> resolves by rewriting that file.
-
 ---
 
 ## Sprint 3 — Asset cleanup
@@ -129,7 +119,9 @@ they fall into two different tiers, and only two of them are deletions.
       A poster is citable scholarly output and a standard Zenodo deposit type, so it earns a
       DOI rather than a repo link. Cite it in Additional Research alongside the six Zenodo
       DOIs already there.
-      _Done when:_ the poster has a DOI and `index.md` cites it.
+      _Done:_ DOI `10.5281/zenodo.21631478`, cited as reference 14 in Additional Research.
+      Deposited with `zenodo/deposit_poster.sh` (outside this repo), which kebab-cases the
+      file before upload.
 
 - [x] **Delete `pumps_certification.pdf` (868 KB) and `osu_deans_list.pdf` (1.5 MB).**
       Credentials belong on the CV as line items, not published as scans — the reader already
@@ -145,8 +137,8 @@ they fall into two different tiers, and only two of them are deletions.
       (linked from `index.md:8`), must stay current, and are cheap: 132 KB over 6 revisions
       has cost 767 KB of history, 84 KB over 3 revisions has cost 243 KB.
 
-- [x] **Delete `thumbnail.png`** — referenced only by the upstream Cayman README.
-      _Blocked by:_ Sprint 4's README rewrite.
+- [x] **Delete `thumbnail.png`** — referenced only by the upstream Cayman README, and
+      unreferenced once sprint 4 rewrote it.
 
 - [x] Confirm `assets/images/favicon.png` stays — it is referenced from
       `_layouts/default.html` and is easy to sweep up by mistake.
@@ -162,40 +154,48 @@ they fall into two different tiers, and only two of them are deletions.
 
 ## Sprint 4 — Documentation
 
-- [ ] **Replace `README.md`.** It is currently the Cayman theme's documentation, complete
+- [x] **Replace `README.md`.** It is currently the Cayman theme's documentation, complete
       with the theme's CI and gem-version badges. Replace with a short README covering: what
       the site is, where it is published, how to preview it locally, and a credit line for
       the Cayman theme (CC0, `pages-themes/cayman`).
-      _Unblocks:_ deleting `thumbnail.png` in Sprint 3.
 
-- [ ] **Decide on `LICENSE`.** Recommendation: keep it. `_sass/` and `_layouts/` are derived
-      from CC0-licensed Cayman. Note in the README that the license covers the theme, not the
-      CV/resume/research content.
+- [x] **Decide on `LICENSE`.** Kept. `_layouts/default.html` is derived from CC0-licensed
+      Cayman — the only such file left, now that `_sass/` and `_includes/` are gone. The
+      README notes that the license covers the theme, not the CV/resume/research content.
+      CC0 requires no attribution, so this is a courtesy rather than an obligation.
 
 ---
 
 ## Sprint 5 — Optional / needs a local preview
 
-Deferred because these carry real risk of changing how the site renders. Do not attempt
-without running the site locally and comparing before/after.
+Deferred because these carry real risk of changing how the site renders. `make serve` now
+provides the local preview these needed — see "Site build" below.
 
-- [ ] **Consider deleting `_sass/`.** `_config.yml` sets `theme: jekyll-theme-cayman`, which
+- [x] **Consider deleting `_sass/`.** `_config.yml` sets `theme: jekyll-theme-cayman`, which
       GitHub Pages ships as a supported theme, so `@import 'jekyll-theme-cayman'` in
       `assets/css/style.scss` would resolve to the gem's copy instead of the local one. The
       local files are unmodified since the fork, so this *should* be a no-op — but it is a
       live rendering dependency and the gem version may drift from the vendored copy.
-      _Done when:_ a local build renders identically with `_sass/` removed. Revert otherwise.
+      _Done._ All five files were byte-identical to the published `jekyll-theme-cayman`
+      0.2.0 gem, which is exactly the version Pages ships. `_includes/` turned out to be
+      identical too, so both directories were deleted. A local build confirms the compiled
+      `style.css` still carries the Cayman rules, resolved from the gem.
+      Drift is also less of a risk than assumed: the `github-pages` gem pins
+      `jekyll-theme-cayman = 0.2.0` exactly, and 0.2.0 has been current since 2021-07-29.
 
-- [ ] **Remove dead Google Analytics plumbing.** `_config.yml` has an empty
-      `google_analytics:` key, and `_includes/head-custom-google-analytics.html` is included
-      via `_includes/head-custom.html`. Inert today.
-      _Superseded by sprint 6_ — the same deletion is step 5 there. Do it in sprint 6, not
-      here, so the site is never without analytics plumbing mid-change.
+- [x] **Remove dead Google Analytics plumbing.** Done as a side effect of deleting
+      `_includes/`, plus dropping the empty `google_analytics:` key from `_config.yml`.
+      Note the correction: deleting the local includes did not remove the GA snippet, it
+      fell through to the gem's copy. What silences it is the missing config key, since the
+      gem wraps the snippet in a `site.google_analytics` conditional.
 
-- [ ] **Remove `show_downloads: true` from `_config.yml`.** The customized
-      `_layouts/default.html` dropped the `{% if site.show_downloads %}` block, so this
-      setting has no effect. Verified as dead — no reference in `_layouts/`, `_includes/`,
-      or `_sass/`.
+- [x] **Remove `show_downloads: true` from `_config.yml`.** The customized
+      `_layouts/default.html` dropped the `site.show_downloads` conditional, so the setting
+      had no effect. Worth knowing it was a live trap rather than mere clutter: revert to
+      the stock Cayman layout with the key still set and the "Download .zip" and
+      "Download .tar.gz" buttons reappear.
+      _Do not write that conditional out in full anywhere in this file_ — see "Site build"
+      below for why an unclosed Liquid tag here once broke the production build.
 
 - [x] **Trim `.gitignore`.** Regenerated from
       `toptal.com/developers/gitignore/api/macos,visualstudiocode,jekyll,node,sass` —
@@ -203,10 +203,20 @@ without running the site locally and comparing before/after.
       `package-lock.json` is not, both verified. `Gemfile.lock` was re-added manually in
       sprint 2a, since no toptal template carries it.
 
-- [ ] **Consider splitting `index.md`.** At ~24 KB it holds the entire site in one page with
-      a hand-maintained table of contents and six reference sections. Splitting into
-      per-section pages would make the anchors in Sprint 1 much harder to break, at the cost
-      of a real navigation layout. Larger project, not cleanup.
+- [x] **Consider splitting `index.md`.** Considered; **not now**, revisit after the content
+      rewrite. Findings, so this does not have to be re-derived:
+      - 3,033 words across 3 H1 groups, 8 H2 sections, and 6 reference lists.
+      - All 45 citation links are **section-local** — every one points at a reference list
+        inside its own H1 group. Splitting on H1 boundaries yields zero cross-page links, so
+        the mechanical work is small. The other 16 anchors are the hand-maintained table of
+        contents, which navigation would replace anyway.
+      - The real cost is that **Cayman ships no navigation at all** — stock layout is header,
+        content, footer. Multi-page needs a nav built into the layout override.
+      - The unfixable part: **URL fragments never reach the server**, so no redirect can
+        rescue an existing `davisethan.github.io/#ms-thesis` link. Anything citing a section
+        anchor — CV, resume, arXiv, Zenodo, LinkedIn — degrades silently.
+      - Natural shape if revisited: `/` (photo, contact, bio, nav), `/research/` (~2,009
+        words), `/teaching/` (~413), `/industry/` (~450).
 
 ---
 
@@ -215,10 +225,11 @@ without running the site locally and comparing before/after.
 Answer "who is visiting the site, and where from" without cookies, a consent banner, or
 cost. Chosen over Google Analytics 4 for three reasons:
 
-1. The theme's GA include is **dead code**. `_includes/head-custom-google-analytics.html`
-   uses `analytics.js` / `ga('create', …)` — Universal Analytics, which stopped processing
-   hits 2023-07-01 and fully sunset 2024-07-01. Pasting a GA4 `G-XXXXXXXX` measurement ID
-   into `_config.yml` would load an obsolete library and silently collect nothing.
+1. The theme's GA include is **dead code**. It uses `analytics.js` / `ga('create', …)` —
+   Universal Analytics, which stopped processing hits 2023-07-01 and fully sunset
+   2024-07-01. Pasting a GA4 `G-XXXXXXXX` measurement ID into `_config.yml` would load an
+   obsolete library and silently collect nothing. The include now lives only in the gem,
+   since `_includes/` was deleted in sprint 5.
 2. GA4 sets cookies, so it pulls in a consent banner and a privacy policy.
 3. This site's audience — ML researchers, engineers, recruiters — blocks trackers at high
    rates, and GA is the most-blocked script on the web. The undercount would be large and
@@ -242,15 +253,13 @@ fingerprint by IP or user agent.
       The token is **not a secret** (it ships in public page source), so committing it is fine.
 
 - [ ] **4. Add the snippet to `_layouts/default.html`, immediately before `</body>`**
-      (currently line 43). Cloudflare's docs specify before the closing body tag — *not* in
-      `<head>`, so this does **not** go in `_includes/head-custom.html` despite that being
-      the theme's usual customization hook.
+      (currently line 43). Cloudflare's docs specify before the closing body tag, not in
+      `<head>`. The layout override is now the only place it can go — `_includes/`, the
+      theme's usual customization hook, was deleted in sprint 5.
 
-- [ ] **5. Remove the dead GA plumbing.** Supersedes the sprint 5 item.
-      - Delete `_includes/head-custom-google-analytics.html`
-      - Remove the `{% include head-custom-google-analytics.html %}` line and its
-        `<!-- Setup Google Analytics -->` comment from `_includes/head-custom.html`
-      - Remove `google_analytics:` from `_config.yml`
+- [x] **5. Remove the dead GA plumbing.** Done ahead of this sprint, in sprint 5. The two
+      `_includes/` files are gone and `google_analytics:` is out of `_config.yml`, which is
+      the part that actually silences it.
 
 - [ ] **6. Verify.** Load `https://davisethan.github.io/`, open devtools → Network, confirm a
       request to `static.cloudflareinsights.com`. Then confirm the visit appears in the
@@ -274,6 +283,51 @@ fingerprint by IP or user agent.
 
 GoatCounter (free for non-commercial), Plausible (~$9/mo), Fathom (~$15/mo). All are
 cookie-free and privacy-first; the paid ones offer more depth than Cloudflare.
+
+---
+
+## Site build (in place)
+
+Added, not a todo. Recorded because a build failure here took the live site down for a day.
+
+### Local preview
+
+`make serve` runs Jekyll in a `ruby:3.3` container and serves on
+[localhost:4000](http://localhost:4000). Nothing is installed on the host — system Ruby is
+2.6.10 and `github-pages` needs 3.3.4. Gems are cached in a named Docker volume, so only
+the first run is slow. It takes 20–40 seconds to come up; a connection error before then is
+normal. `make serve PORT=4001` if 4000 is taken.
+
+This is the only way to see a change before pushing, and the only way to reproduce a Pages
+build failure — GitHub reports nothing more useful than "Page build failed."
+
+### Why `_config.yml` has an `exclude:` list
+
+**GitHub Pages enables `jekyll-optional-front-matter`**, so *every* Markdown file becomes a
+page, front matter or not. That is not stock Jekyll behavior, and it is the trap:
+`BACKLOG.md` quoted an unclosed Liquid `if` tag, Liquid runs before Markdown so backticks
+do not protect it, and the build failed with a syntax error pointing at this file. Two
+consecutive Pages builds errored before the cause was found.
+
+So repository docs and tooling are excluded — they are not site content, and they must not
+be parsed as pages. Consequences worth knowing:
+
+- **Never write a bare unclosed Liquid tag in any `.md` file here.** The `exclude:` entry is
+  the only thing making it safe, and deleting that entry re-breaks production.
+- **Setting `exclude` replaces Jekyll's defaults rather than merging them**, so `Gemfile`,
+  `Gemfile.lock`, and `.jekyll-cache` had to be listed again. Caught because `Gemfile`
+  started appearing in `_site/`.
+- `node_modules` is listed for local builds only. It is gitignored, so Pages never sees it,
+  but `make serve` does — and a malformed Liquid tag in a dependency's README will fail the
+  build.
+
+### `assets/css/style.scss` needs its empty front matter
+
+The `---` / `---` at the top is not decoration. It is what tells Jekyll to compile the file
+to `style.css`. Remove it and the failure is silent rather than loud: the site still gets a
+`style.css`, because the gem ships its own `assets/css/style.scss` — but it is the gem's,
+without the `.icon-link` rules, and the raw `.scss` is published alongside it. Verified both
+ways with a local build.
 
 ---
 
@@ -313,9 +367,23 @@ the scan adds nothing the reader was doubting.
 
 ### Thesis assets (future sprint)
 
-- [ ] Deposit the thesis PDF (~20–25 MB) on Zenodo, and check whether UW ResearchWorks
-      deposit is required — it likely is, and gives a second permanent URL at no extra effort.
-      Link from `index.md` by DOI. **Never commit the PDF.**
+- [ ] Deposit the thesis PDF (20.3 MB) on Zenodo. Link from `index.md` by DOI.
+      **Never commit the PDF.** Metadata is prepared at `zenodo/metadata/thesis.json`
+      (outside this repo) and dry-run clean; `zenodo/deposit_poster.sh` takes any file.
+      _Blocked on:_ which access option was selected in the ProQuest ETD agreement —
+      immediate open access or delayed. UW honors that choice for both ProQuest and the IR,
+      so a delayed selection is an embargo and Zenodo must wait. ProQuest showing a 24-page
+      preview proves nothing either way; that is its standard paywall for non-OA deposits.
+- [ ] Chase the UW ResearchWorks deposit — it is **not** PhD-only, contrary to first
+      assumption. The ETD confirmation email names ProQuest *and* ResearchWorks, and the
+      repository holds 38 master's theses from 2026 alone. Yours is not loaded yet; records
+      arrive in batches (2026-04-20 for spring; 2025-08-01 and 2024-09-09 for the summer
+      cohorts), so a June graduate lands in the summer batch.
+      _Contact:_ `rworks@uw.edu`, manuscript ID 29520.
+      ProQuest record is live: https://www.proquest.com/docview/3366477179, publication
+      no. 32735698.
+      When it appears, it also answers the embargo question for free — full text open means
+      immediate open access was selected.
 - [ ] Figures pulled out of the thesis for the page stay in the repo, sized for web, under the
       same per-asset budget.
 
@@ -353,7 +421,7 @@ whitelisting it.
 **When the prose check flags a term:** `make prose-fix` auto-applies every terminology fix.
 Review the diff before committing — it edits published prose.
 
-    make               # list available targets
+    make serve         # local preview in Docker, http://localhost:4000
     make lint          # spell + prose, both CI checks
     make spell         # spelling only
     make spell-words   # list unknown words to triage
@@ -377,8 +445,8 @@ in a new release can fail a build that has no content changes. To bump one:
 
 - [ ] **`make help` prints nothing.** It greps for `## ` doc comments that were later removed
       from the `Makefile`. Either restore the comments or replace `help` with a static list.
-- [ ] Widen scope to `_layouts/*.html` and `_includes/*.html` if prose starts living there.
-      Skipped for now — those are near-unmodified theme files and mostly markup.
+- [ ] Widen scope to `_layouts/*.html` if prose starts living there. Skipped for now — it is
+      mostly markup. (`_includes/` no longer exists.)
 - [ ] Consider adding a link checker. Neither linter can see a broken anchor; sprint 1's
       were found by a one-off script, which is not repeatable protection.
-- [ ] Mention the linters in the new `README.md` when sprint 4 rewrites it.
+- [x] Mention the linters in the new `README.md` when sprint 4 rewrites it.
