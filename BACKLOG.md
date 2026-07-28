@@ -337,7 +337,7 @@ over the Markdown would be preferable, at the cost of reliable anchor checking.
       115 gems from scratch.
       _Done when:_ a pull request with a deliberately broken anchor fails the check.
 
-- [ ] **4. Add the external-link job.** Weekly `schedule` trigger, `continue-on-error: true`,
+- [x] **4. Add the external-link job.** Weekly `schedule` trigger, `continue-on-error: true`,
       **non-blocking**. Separate from step 3 on purpose: LinkedIn and Medium return 403/999
       to CI runners for reasons unrelated to this site, and a link checker that blocks merges
       for that gets switched off within a month. Run it anyway — 10 of the 23 external links
