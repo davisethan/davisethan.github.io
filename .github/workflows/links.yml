@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   htmlproofer:
-    name: build and internal links
+    name: htmlproofer
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
