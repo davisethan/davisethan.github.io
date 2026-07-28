@@ -344,17 +344,36 @@ over the Markdown would be preferable, at the cost of reliable anchor checking.
       are DOIs, and a hand-typed DOI is a live risk.
       Use `--ignore-status-codes` and `--ignore-urls` for hosts that are reliably hostile.
 
-- [ ] **5. Verify against the two failures that already happened.** Not a hypothetical test:
-      - Sprint 1's `[[2, 6]]()` produced `<a href="">` — should be flagged.
-      - Sprint 3's six deleted images stayed referenced in `index.md` and shipped broken to
-        production — should be flagged by the Images check.
-      _Done when:_ both are caught by a local `make links` run before the workflow is trusted.
+- [x] **5. Verify against the failures that already happened.** Not a hypothetical test.
+      All three historical defects were restored verbatim and caught by one `make links`
+      run, which exited non-zero:
+      - Sprint 1's `[[2, 6]]()` → `'a' tag is missing a reference`
+      - Sprint 1's `[(2016)]((#teaching-assistant-references))` →
+        `internally linking to (#teaching-assistant-references), which does not exist`
+      - Sprint 3's `![...](assets/images/samples.png)` →
+        `internal image assets/images/samples.png does not exist`
+      Each is a different check — Links, Links > Internal, and Images — so all three are
+      exercised, not just one. `index.md` was restored and the run passes again.
 
-- [ ] **6. Document `make build` and `make links` in `README.md`,** alongside the existing
-      lint targets.
+- [x] **6. Document `make build` and `make links` in `README.md`,** alongside the existing
+      lint targets. The "Linting" section became "Checks", with all four workflows and their
+      targets in a table, and the warning not to make `htmlproofer-external` a required
+      status check. Also corrected the local-preview instructions, which still said
+      `bundle install && bundle exec jekyll serve` — impossible on a host with Ruby 2.6.10.
 
-- [ ] **7. Tune the ignore lists after the first scheduled external run,** once it is clear
-      which hosts actually misbehave rather than which ones are predicted to.
+- [x] **7. Tune the ignore lists after the first external run.** No tuning needed: the
+      first `workflow_dispatch` run on GitHub passed, 19 external links in 26 seconds.
+      The tuning had already happened in task 4, from a real run rather than a prediction —
+      and the prediction was wrong in both directions. LinkedIn and Google Scholar, both
+      expected to be hostile, were fine. The actual failures were Medium (403 to automated
+      requests), `fonts.gstatic.com` (a preconnect target, not a page, so 404 by design),
+      and all 8 DOIs — which were **timeouts, not rot**: `doi.org` redirects to zenodo.org,
+      and a direct `curl` took 45 seconds and once returned 504. Ignoring `doi.org` would
+      have gutted the check, so the fix was a 90-second timeout instead. GitHub's network
+      reaches Zenodo faster than a local container did (26s versus 30–55s), so that timeout
+      has headroom.
+      _Revisit if_ the weekly run goes red for reasons unrelated to link rot; one clean run
+      does not prove a flaky host is stable.
 
 ### Notes
 
