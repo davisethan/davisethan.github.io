@@ -1,7 +1,6 @@
 title: Ethan Davis
 theme: jekyll-theme-cayman
 exclude:
-  - BACKLOG.md
   - README.md
   - Makefile
   - cspell.config.yaml
