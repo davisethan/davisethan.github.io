@@ -18,7 +18,7 @@ HTMLPROOFER = $(BUNDLE) exec htmlproofer
 
 .DEFAULT_GOAL := help
 .PHONY: help spell spell-words spell-version prose prose-fix lint install clean \
-	serve deps build links
+	serve deps build links links-external
 
 help:
 	@grep -hE '^[a-zA-Z_-]+:.*## ' $(MAKEFILE_LIST) \
@@ -60,6 +60,14 @@ build: deps
 
 links: build
 	$(HTMLPROOFER) --disable-external _site
+
+# timeout: doi.org redirects to zenodo.org, which is slow
+# medium.com: 403s automated requests
+# fonts.gstatic.com: preconnect target, not a page
+links-external: build
+	$(HTMLPROOFER) _site \
+		--typhoeus '{"timeout":90,"connecttimeout":30,"followlocation":true}' \
+		--ignore-urls '/^https://medium\.com/,/^https://fonts\.gstatic\.com/'
 
 install: node_modules
 
