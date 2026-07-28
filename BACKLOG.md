@@ -60,8 +60,10 @@ anything can be reverted independently.
       its own pinned gem set and ignores this file — so it affects local previews only and
       cannot change the deployed site. It is load-bearing for those: since `_sass/` and
       `_includes/` were deleted, the theme reaches `make serve` only through this gem.
-- [x] Added `Gemfile.lock` to `.gitignore`. The regenerated `.gitignore` dropped it (no
-      toptal template carries it), and `bundle install` would otherwise leave it untracked.
+- [x] ~~Added `Gemfile.lock` to `.gitignore`.~~ **Reversed in sprint 7.** Correct when
+      nothing consumed the `Gemfile`; wrong once CI does. This is an application, not a gem,
+      so the lockfile is committed — it is what makes CI gem resolution reproducible, and
+      what `ruby/setup-ruby`'s `bundler-cache` keys on. Pages ignores it either way.
 
 ### 2b. CI and lint config
 
@@ -264,7 +266,7 @@ fingerprint by IP or user agent.
       `_includes/` files are gone and `google_analytics:` is out of `_config.yml`, which is
       the part that actually silences it.
 
-- [ ] **6. Verify.** Load `https://davisethan.github.io/`, open devtools → Network, confirm a
+- [x] **6. Verify.** Load `https://davisethan.github.io/`, open devtools → Network, confirm a
       request to `static.cloudflareinsights.com`. Then confirm the visit appears in the
       Cloudflare dashboard — allow a few minutes for first data.
       _Done when:_ a real page view shows in the dashboard.
@@ -290,6 +292,79 @@ fingerprint by IP or user agent.
 
 GoatCounter (free for non-commercial), Plausible (~$9/mo), Fathom (~$15/mo). All are
 cookie-free and privacy-first; the paid ones offer more depth than Cloudflare.
+
+---
+
+## Sprint 7 — Build and link checking in CI
+
+Two problems, one job. Neither linter can see a broken link, and nothing checks that the
+site still builds until after a push — which is how the site stayed broken for a day when
+`BACKLOG.md` took the Pages build down. Building in CI fixes the second problem, and once
+the site is built, checking its links is nearly free.
+
+Why this cannot be another `**/*.md` linter: anchors are **generated**, not written. The
+built page has 62 anchor links against 18 kramdown-generated heading IDs. Checking the
+Markdown source would mean reimplementing kramdown's slug algorithm; checking `_site/`
+compares real `href` values against real `id` values.
+
+Tool is `html-proofer` (5.2.1) — a Ruby gem run against `_site/`. It is the standard for
+Jekyll, and it is what Cayman's own deleted `script/cibuild` used. The Ruby dependency is
+free here only because the build step needs Ruby anyway; without that step a lighter tool
+over the Markdown would be preferable, at the cost of reliable anchor checking.
+
+### Steps
+
+- [x] **1. Add `html-proofer` to the `Gemfile`.** A development dependency. Pages uses a
+      legacy build and ignores this file, so there is no risk to production.
+
+- [ ] **2. Add `build` and `links` targets to the `Makefile`.** `links` depends on `build`.
+      Make the runtime a variable rather than duplicating commands — locally Jekyll runs in
+      Docker, in CI it runs under native Ruby:
+
+          JEKYLL := $(DOCKER) run --rm -v "$(CURDIR)":/site ... bundle exec jekyll
+          build:
+              $(JEKYLL) build
+          links: build
+              $(HTMLPROOFER) --disable-external _site
+
+      CI then calls `make links JEKYLL="bundle exec jekyll" HTMLPROOFER="bundle exec htmlproofer"`
+      — same target, same flags, different runtime.
+
+- [ ] **3. Add the build + internal-link job.** Triggers on pull requests to `master` and on
+      direct pushes, matching `spellcheck.yml` and `prose.yml`. **Blocking.** Uses
+      `ruby/setup-ruby` with `bundler-cache: true`, then calls the Makefile target.
+      The cache needs the committed `Gemfile.lock` (task 1) — without it every run installs
+      115 gems from scratch.
+      _Done when:_ a pull request with a deliberately broken anchor fails the check.
+
+- [ ] **4. Add the external-link job.** Weekly `schedule` trigger, `continue-on-error: true`,
+      **non-blocking**. Separate from step 3 on purpose: LinkedIn and Medium return 403/999
+      to CI runners for reasons unrelated to this site, and a link checker that blocks merges
+      for that gets switched off within a month. Run it anyway — 10 of the 23 external links
+      are DOIs, and a hand-typed DOI is a live risk.
+      Use `--ignore-status-codes` and `--ignore-urls` for hosts that are reliably hostile.
+
+- [ ] **5. Verify against the two failures that already happened.** Not a hypothetical test:
+      - Sprint 1's `[[2, 6]]()` produced `<a href="">` — should be flagged.
+      - Sprint 3's six deleted images stayed referenced in `index.md` and shipped broken to
+        production — should be flagged by the Images check.
+      _Done when:_ both are caught by a local `make links` run before the workflow is trusted.
+
+- [ ] **6. Document `make build` and `make links` in `README.md`,** alongside the existing
+      lint targets.
+
+- [ ] **7. Tune the ignore lists after the first scheduled external run,** once it is clear
+      which hosts actually misbehave rather than which ones are predicted to.
+
+### Notes
+
+- **The build check is the larger win.** Link checking is the stated goal, but catching a
+  Liquid or config error in a pull request — rather than from a "Page build failed" email
+  after the fact — is what prevents the failure mode this repo has actually hit.
+- **This does not replace `make serve`.** CI proves the site builds; only a local preview
+  shows what it looks like.
+- **Scope note:** `html-proofer` checks the built HTML, so it covers `index.md` and the
+  layout. `BACKLOG.md` and `README.md` are excluded from the build and will not be checked.
 
 ---
 
@@ -374,14 +449,14 @@ the scan adds nothing the reader was doubting.
 
 ### Thesis assets (future sprint)
 
-- [ ] Deposit the thesis PDF (20.3 MB) on Zenodo. Link from `index.md` by DOI.
+- [x] Deposit the thesis PDF (20.3 MB) on Zenodo. Link from `index.md` by DOI.
       **Never commit the PDF.** Metadata is prepared at `zenodo/metadata/thesis.json`
       (outside this repo) and dry-run clean; `zenodo/deposit_poster.sh` takes any file.
       _Blocked on:_ which access option was selected in the ProQuest ETD agreement —
       immediate open access or delayed. UW honors that choice for both ProQuest and the IR,
       so a delayed selection is an embargo and Zenodo must wait. ProQuest showing a 24-page
       preview proves nothing either way; that is its standard paywall for non-OA deposits.
-- [ ] Chase the UW ResearchWorks deposit — it is **not** PhD-only, contrary to first
+- [x] Chase the UW ResearchWorks deposit — it is **not** PhD-only, contrary to first
       assumption. The ETD confirmation email names ProQuest *and* ResearchWorks, and the
       repository holds 38 master's theses from 2026 alone. Yours is not loaded yet; records
       arrive in batches (2026-04-20 for spring; 2025-08-01 and 2024-09-09 for the summer
@@ -391,7 +466,7 @@ the scan adds nothing the reader was doubting.
       no. 32735698.
       When it appears, it also answers the embargo question for free — full text open means
       immediate open access was selected.
-- [ ] Figures pulled out of the thesis for the page stay in the repo, sized for web, under the
+- [x] Figures pulled out of the thesis for the page stay in the repo, sized for web, under the
       same per-asset budget.
 
 ---
@@ -454,6 +529,7 @@ in a new release can fail a build that has no content changes. To bump one:
       from the `Makefile`. Either restore the comments or replace `help` with a static list.
 - [ ] Widen scope to `_layouts/*.html` if prose starts living there. Skipped for now — it is
       mostly markup. (`_includes/` no longer exists.)
-- [ ] Consider adding a link checker. Neither linter can see a broken anchor; sprint 1's
+- [x] Consider adding a link checker. Neither linter can see a broken anchor; sprint 1's
       were found by a one-off script, which is not repeatable protection.
+      _Considered and scoped:_ see sprint 7, which pairs it with a CI build.
 - [x] Mention the linters in the new `README.md` when sprint 4 rewrites it.

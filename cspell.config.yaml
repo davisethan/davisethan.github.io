@@ -89,6 +89,8 @@ words:
   - toptal
   - cspell
   - proofer
+  - htmlproofer
+  - CURDIR
   - textlint
   - textlintignore
   - textlintrc
