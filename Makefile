@@ -3,17 +3,22 @@ TEXTLINT := npx textlint
 
 CONTENT := **/*.md
 
-# Local preview runs in a container so no Ruby is installed on the host.
-# ruby:3.3 matches the Ruby that GitHub Pages builds with.
 DOCKER := docker
 RUBY_IMAGE := ruby:3.3
 GEM_VOLUME := davisethan-gems
 PORT := 4000
-# Interactive by default; override with `make serve TTY=` where there is no terminal.
 TTY := -it
 
+BUNDLE = $(DOCKER) run --rm \
+	-v "$(CURDIR)":/site -w /site \
+	-v $(GEM_VOLUME):/usr/local/bundle \
+	$(RUBY_IMAGE) bundle
+JEKYLL = $(BUNDLE) exec jekyll
+HTMLPROOFER = $(BUNDLE) exec htmlproofer
+
 .DEFAULT_GOAL := help
-.PHONY: help spell spell-words spell-version prose prose-fix lint install clean serve
+.PHONY: help spell spell-words spell-version prose prose-fix lint install clean \
+	serve deps build links
 
 help:
 	@grep -hE '^[a-zA-Z_-]+:.*## ' $(MAKEFILE_LIST) \
@@ -47,6 +52,15 @@ serve:
 		$(RUBY_IMAGE) \
 		bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --force_polling"
 
+deps:
+	$(BUNDLE) install --quiet
+
+build: deps
+	$(JEKYLL) build
+
+links: build
+	$(HTMLPROOFER) --disable-external _site
+
 install: node_modules
 
 node_modules: package-lock.json
@@ -54,4 +68,4 @@ node_modules: package-lock.json
 	@touch node_modules
 
 clean:
-	rm -rf node_modules
+	rm -rf node_modules _site .jekyll-cache
