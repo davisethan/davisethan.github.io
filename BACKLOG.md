@@ -330,7 +330,7 @@ over the Markdown would be preferable, at the cost of reliable anchor checking.
       CI then calls `make links JEKYLL="bundle exec jekyll" HTMLPROOFER="bundle exec htmlproofer"`
       — same target, same flags, different runtime.
 
-- [ ] **3. Add the build + internal-link job.** Triggers on pull requests to `master` and on
+- [x] **3. Add the build + internal-link job.** Triggers on pull requests to `master` and on
       direct pushes, matching `spellcheck.yml` and `prose.yml`. **Blocking.** Uses
       `ruby/setup-ruby` with `bundler-cache: true`, then calls the Makefile target.
       The cache needs the committed `Gemfile.lock` (task 1) — without it every run installs
