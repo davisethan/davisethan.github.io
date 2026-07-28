@@ -13,16 +13,26 @@ it.
 | --- | --- |
 | `index.md` | The whole site. One page, with a hand-maintained table of contents and a reference list per section. |
 | `_layouts/default.html` | Page shell, customized from the Cayman theme. |
-| `_includes/` | Head customization hooks. |
 | `assets/css/style.scss` | Site styles, imported on top of the theme. |
 | `assets/images/` | Figures and the favicon. |
 | `assets/files/` | CV and resume. |
 | `_config.yml` | Jekyll configuration. |
-| `BACKLOG.md` | Cleanup backlog, and the policy for where an asset belongs. |
 
-Anything citable is deposited externally and linked by DOI rather than committed here.
-`BACKLOG.md` has the reasoning; the short version is that binaries do not
-delta-compress, so every revision is stored close to in full, forever, in every clone.
+Everything else Cayman provides comes from the `jekyll-theme-cayman` gem rather than living
+in this repository.
+
+## Where an asset belongs
+
+Anything citable — thesis, papers, posters, datasets, code releases — is deposited on Zenodo
+and linked by DOI, not committed here. Anything load-bearing for the page — the CV, the
+resume, an embedded figure — stays in the repository, up to roughly 5 MB per asset counting
+expected revisions. Anything that is neither, such as a certificate scan, is a line on the
+CV and is not hosted at all.
+
+The reason is that binaries do not delta-compress, so every revision is stored close to in
+full, forever, in every clone. Deleting one later cleans the working tree and the published
+site, not the clone size. Git LFS is not an escape hatch either: Pages does not resolve LFS
+pointers, so visitors would download the pointer file instead of the PDF.
 
 ## Previewing locally
 
