@@ -317,7 +317,7 @@ over the Markdown would be preferable, at the cost of reliable anchor checking.
 - [x] **1. Add `html-proofer` to the `Gemfile`.** A development dependency. Pages uses a
       legacy build and ignores this file, so there is no risk to production.
 
-- [ ] **2. Add `build` and `links` targets to the `Makefile`.** `links` depends on `build`.
+- [x] **2. Add `build` and `links` targets to the `Makefile`.** `links` depends on `build`.
       Make the runtime a variable rather than duplicating commands — locally Jekyll runs in
       Docker, in CI it runs under native Ruby:
 
