@@ -544,8 +544,10 @@ in a new release can fail a build that has no content changes. To bump one:
 
 ### Follow-ups
 
-- [ ] **`make help` prints nothing.** It greps for `## ` doc comments that were later removed
-      from the `Makefile`. Either restore the comments or replace `help` with a static list.
+- [x] **`make help` prints nothing.** It greps for `## ` doc comments that were later removed
+      from the `Makefile`. Restored the comments rather than writing a static list, so the
+      output cannot drift from the targets. Documenting stays opt-in — `deps` and
+      `node_modules` are internal and carry no `## `, so they are correctly absent.
 - [ ] Widen scope to `_layouts/*.html` if prose starts living there. Skipped for now — it is
       mostly markup. (`_includes/` no longer exists.)
 - [x] Consider adding a link checker. Neither linter can see a broken anchor; sprint 1's
