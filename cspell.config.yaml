@@ -22,10 +22,13 @@ words:
   # --- Machine learning and statistics ---
   - backpropagation
   - convolutional
+  - eigendecomposition
   - eigenface
+  - eigenfaces
   - ELBO
   - frequentist
   - generalizability
+  - MCMC
   - metaheuristic
   - Multimodal
   - Riemannian
@@ -38,11 +41,13 @@ words:
   - DCNN
   - SCNN
   - MOABB
+  - SPANER
 
   # --- Computing and hardware ---
   - BLAS
   - CuBLAS
   - CUDA
+  - lifecycles
 
   # --- Cited authors and publishers ---
   - Aristimunha
@@ -55,6 +60,7 @@ words:
   - Deisenroth
   - Duda
   - Elsevier
+  - figshare
   - Guetschel
   - Johansson
   - Kaufmann
@@ -80,6 +86,7 @@ words:
 
   # --- This project ---
   - davisethan
+  - moabbr
   - Cayman
   - cspell
   - proofer
