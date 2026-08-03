@@ -5,7 +5,9 @@ title: Ethan Davis
 
 ![Ethan Davis](assets/images/profile.jpeg)
 
-<a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+<a href="mailto:ethandavisecd@gmail.com">Contact</a> | <a href="assets/files/ethan-davis-cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+
+My research interests center on probabilistic ML: models that report a distribution over outcomes rather than a single answer. Core pillars are uncertainty quantification, Bayesian inference, and generative modeling, and the properties I value most are data efficiency and adaptability to evolving domains. I have studied posterior sampling algorithms, Bayesian hypothesis testing, and end-to-end ML lifecycles with continuous training. My current interests are Bayesian transfer and continual learning, causal inference, and spatial and temporal modeling.
 
 # Research Experience
 
