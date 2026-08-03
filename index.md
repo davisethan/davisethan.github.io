@@ -5,7 +5,7 @@ title: Ethan Davis
 
 ![Ethan Davis](assets/images/profile.jpeg)
 
-<a href="mailto:davise5@uw.edu">Contact</a> | <a href="assets/files/Ethan_Davis_CV_2025.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+<a href="mailto:ethandavisecd@gmail.com">Contact</a> | <a href="assets/files/ethan-davis-cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
 
 # Research Experience
 
