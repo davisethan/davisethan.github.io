@@ -20,68 +20,24 @@ ignoreRegExpList:
 
 words:
   # --- Machine learning and statistics ---
-  - backpropagation
-  - convolutional
   - eigendecomposition
   - eigenface
   - eigenfaces
-  - ELBO
   - frequentist
-  - generalizability
   - MCMC
   - metaheuristic
-  - Multimodal
   - Riemannian
-  - Sobol
-  - tailedness
 
   # --- Neuroscience and BCI ---
-  - biosignals
-  - neurorehabilitation
-  - DCNN
-  - SCNN
   - MOABB
   - SPANER
 
   # --- Computing and hardware ---
-  - BLAS
-  - CuBLAS
   - CUDA
   - lifecycles
 
-  # --- Cited authors and publishers ---
-  - Aristimunha
-  - Bronstein
-  - Bruna
-  - Brunton
-  - Carlsson
-  - Chevallier
-  - Chiang
-  - Deisenroth
-  - Duda
-  - Elsevier
+  # --- Publishers and repositories ---
   - figshare
-  - Guetschel
-  - Johansson
-  - Kaufmann
-  - Khazem
-  - Kutz
-  - Lotte
-  - Nijholt
-  - Pennec
-  - Prandoni
-  - Savoir
-  - Sedlar
-  - Shalev
-  - Shwartz
-  - Sommer
-  - Strang
-  - Tsai
-  - Vejdemo
-  - Veličković
-  - Velut
-  - Vetterli
-  - Wolpaw
   - Zenodo
 
   # --- This project ---
